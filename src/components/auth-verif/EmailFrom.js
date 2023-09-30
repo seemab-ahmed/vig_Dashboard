@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import React, { useState } from 'react';
 import { Error } from '../../icons-svgs/Svgs';
 import { useNavigate } from 'react-router-dom';
@@ -52,7 +53,7 @@ const navigate =useNavigate()
           </button>
         </form>
         <p className='text-[#ff9a3c96] mt-4 text-center'>
-          Already have an account? <a className='underline-offset-2 underline text-[#FF993C]'>Log in</a>
+          Already have an account? <a  href="#" className='underline text-[#FF993C]'>Log in</a>
         </p>
       </div>
     </div>

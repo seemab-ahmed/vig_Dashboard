@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect } from 'react';
 import Spinner from '../../utils/Spinner';
 import { useNavigate } from 'react-router-dom';
 export default function LoadingModal({ isOpen, onClose }) {
@@ -13,7 +13,7 @@ export default function LoadingModal({ isOpen, onClose }) {
             clearTimeout(timeoutId);
           };
         }
-      }, [isOpen, onClose]);
+      }, [isOpen, onClose , navigate]);
     
   return (
    

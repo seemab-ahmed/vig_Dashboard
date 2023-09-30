@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { BackArrow, Error, Tick } from '../../icons-svgs/Svgs';
-import { useNavigate } from 'react-router-dom';
+// import { useNavigate } from 'react-router-dom';
 
 export default function UserNamePwForm() {
   const [username, setUsername] = useState('');
@@ -17,7 +17,7 @@ export default function UserNamePwForm() {
   const handlePasswordChange = (e) => {
     setPassword(e.target.value);
   };
-const navigate = useNavigate()
+// const navigate = useNavigate()
   const handleSubmit = (e) => {
     e.preventDefault();
     setSubmitted(true);
