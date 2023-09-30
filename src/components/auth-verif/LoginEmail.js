@@ -35,7 +35,7 @@ export default function LoginEmail() {
 
   return (
     <div>
-      <div className='font-mono min-h-screen border border-blue-900 flex'>
+      <div className='font-mono min-h-screen flex'>
         <div className={`${
           activeTab === 'tab1' ? 'bg-login' : 'bg-wallet'
         } lg:w-[30%] sm:w-[25%] hidden lg:block sm:block`}></div>

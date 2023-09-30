@@ -3,10 +3,10 @@ import React from "react";
 import { Svgs } from "../../icons-svgs/Svgs";
 import UserNamePwForm from "./UserNamePwForm";
 
-export default function UserNamePw() {
+export default function UserNamePw({setTokenState}) {
   return (
     <div>
-      <div className="font-mono min-h-screen border border-blue-900 flex">
+      <div className="font-mono min-h-screen flex">
         <div className=" lg:w-[30%] sm:w-[25%] bg-loginpsw hidden lg:block sm:block"></div>
         <div className="lg:w-[70%] sm:w-[75%] w-full border bg-black flex flex-col justify-between  pb-6 pt-10 lg:pe-20 sm:pe-10 pe-0">
           <div className="flex flex-col justify-center items-center">
@@ -16,7 +16,7 @@ export default function UserNamePw() {
           </div>
           <div>
             <div id="tab1" className={`tab-content `}>
-              <UserNamePwForm />
+              <UserNamePwForm setTokenState={setTokenState}/>
             </div>
           </div>
           <div className="w-full flex items-center justify-center flex-col gap-4 lg:w-[100%] sm:w-[80%] text-center">

@@ -7,6 +7,7 @@ import {
   Route,
 } from "react-router-dom";
 import WalletOptions from './components/walletConnection/WalletOptions';
+import HubMain from './components/main/HubMain';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
           <Route path="/" element={<LoginEmail />} />
           <Route path="/password" element={<UserNamePw />} />
           <Route path="/walletselection" element={<WalletOptions />} />
+          <Route path="/hubmain" element={<HubMain />} />
         </Routes>
       </Router>
     </div>

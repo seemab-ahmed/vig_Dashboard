@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
 import { BackArrow, Error, Tick } from '../../icons-svgs/Svgs';
+import { useNavigate } from 'react-router-dom';
 // import { useNavigate } from 'react-router-dom';
 
-export default function UserNamePwForm() {
+export default function UserNamePwForm({setTokenState}) {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
   const [usernameError, setUsernameError] = useState(false);
@@ -13,7 +14,7 @@ export default function UserNamePwForm() {
   const handleUsernameChange = (e) => {
     setUsername(e.target.value);
   };
-
+const navigate = useNavigate()
   const handlePasswordChange = (e) => {
     setPassword(e.target.value);
   };
@@ -23,13 +24,13 @@ export default function UserNamePwForm() {
     setSubmitted(true);
     if (!usernameRegex.test(username)) {
       setUsernameError(true);
-    } else {
-      setUsernameError(false);
-    }
-    if (password.length < 6) {
+    } else if (password.length < 6) {
       setPasswordError(true);
     } else {
       setPasswordError(false);
+      setUsernameError(false);
+      navigate("/hubmain")
+      setTokenState(true)
     }
   };
   const goBack = () => {
