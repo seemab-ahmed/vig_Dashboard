@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import React, { useEffect, useState } from 'react';
 import { Svgs } from '../../icons-svgs/Svgs';
 import EmailForm from './EmailFrom';
@@ -87,8 +88,8 @@ export default function LoginEmail() {
               </button>
               <p className='text-[#ff9a3c96] '>
                 By registering, you accept our{' '}
-                <a className='underline underline-offset-2 text-[#FF993C]'>Terms of use</a> and{' '}
-                <a className='underline underline-offset-2 text-[#FF993C]'>Privacy Policy</a>
+                <a href="#" className='underline underline-offset-2 text-[#FF993C]'>Terms of use</a> and{' '}
+                <a href="#" className='underline underline-offset-2 text-[#FF993C]'>Privacy Policy</a>
               </p>
             </div>
           )}
