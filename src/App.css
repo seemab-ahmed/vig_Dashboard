@@ -1,27 +1,53 @@
-.bg-login{
-    background-image: url("./assets/emailPage.png ");
-    background-repeat: no-repeat;
-background-size: 100% 100%;
+.bg-login {
+  background-image: url("./assets/emailPage.png ");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
 }
-.bg-loginpsw{
-background-image: url("./assets/passwordpage.png");
-background-repeat: no-repeat;
-background-size: 100% 100%;
-}/* Style tab buttons */
-.bg-wallet{
-background-image: url("./assets/walletcont.png");
-background-repeat: no-repeat;
-background-size: 100% 100%;
-}/* Style tab buttons */
+.bg-loginpsw {
+  background-image: url("./assets/passwordpage.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+} /* Style tab buttons */
+.bg-wallet {
+  background-image: url("./assets/walletcont.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+} /* Style tab buttons */
 .tab-button {
-    padding: 8px 22px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
+  padding: 8px 22px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
 .tab-button-wallet {
-    cursor: pointer;
-    transition: background-color 0.3s ease;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.tab-button.active {
+  background-color: #ff993c;
+}
+@media screen and (max-width: 1020px) {
+  .bg2 {
+    background: radial-gradient(
+        circle closest-corner at center 70px,
+        #ff9a3b3e,
+        #33333300 60%
+      )
+      no-repeat;
   }
-  .tab-button.active {
-    background-color: #FF993C  ;
-  }
+}
+::-webkit-scrollbar {
+  width: 0rem;
+  height: 0;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent; 
+}
+
+::-webkit-scrollbar-thumb {
+  background: transparent;
+  border: none; 
+}
+* {
+  scrollbar-width: none;
+}
