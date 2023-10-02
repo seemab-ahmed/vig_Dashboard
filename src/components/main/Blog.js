@@ -35,12 +35,12 @@ export default function Blog() {
             Nike Leans Into In-Person Fitness As Lululemon Cuts Back
           </h2>
          
-          <p className="text-[#FF993C] w-[15em]">
+          <div className="text-[#FF993C] w-[15em]">
 
           Sports apparel giant Nike has launched “Nike Studios” as<p className="truncate">the
          brand jumpstarts its in-person fitness presence with a new
             group training concept.
-          </p></p> 
+          </p></div> 
         </div>
         <div>
           <button className="flex items-center gap-1 bg-[#29190B] text-[#FF993C] py-2 ps-4 px-5 rounded-full text-left mt-5">
