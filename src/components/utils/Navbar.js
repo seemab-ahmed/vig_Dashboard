@@ -8,8 +8,8 @@ export default function Navbar() {
   const navigate = useNavigate();
   const[isOpen , setIsOpen]=useState(false)
   return (
-    <nav className="bg-[#1F1307] border-gray-200 dark:bg-gray-900 px-16 h-[5em] ">
-      <div className="flex justify-between items-center flex-wrap mx-auto py-4  h-[5em]">
+    <nav className="bg-[#1F1307] border-gray-200 dark:bg-gray-900 lg:px-16 px-4 h-[5em] ">
+      <div className="flex justify-between items-center mx-auto py-4  h-[5em]">
         <div className="flex gap-6 ">
           <button
             href="https://flowbite.com/"
@@ -28,13 +28,13 @@ export default function Navbar() {
           </div>
         </div>
         <div
-          className={`items-center justify-between ${isOpen?"block absolute top-16 right-0 bg-black":"hidden"} w-full md:flex md:w-auto md:order-1`}
+          className={`items-center justify-between z-40 ${isOpen?"block absolute top-16 right-0 bg-black":"hidden"} w-full md:flex md:w-auto md:order-1`}
           id="navbar-search"
         >
-          <ul className="flex flex-col gap-2 items-center p-4 md:p-0 mt-4 font-medium  md:flex-row  md:mt-0">
+          <ul className={`flex flex-col gap-2 items-center p-4 md:p-0 mt-4 font-medium  md:flex-row ${isOpen?"md:mt-0 sm:h-[90vh]":""} `}>
             <li className={`${isOpen && "w-[80%] "}`}>
               <button
-                href="#"
+               
                 className={`p-3 flex justify-center items-center rounded-full bg-[#29190B] ${isOpen &&"py-4 w-[100%] ps-2 pe-4 flex items-center gap-3 text-[#FF993C] rounded-full bg-[#29190B]"}`}
                 aria-current="page"
               >
@@ -43,7 +43,7 @@ export default function Navbar() {
             </li>
             <li className={`${isOpen && "w-[80%] "}`}>
               <button
-                href="#"
+               onClick={()=>{navigate("/favourite")}}
                 className={`p-3 flex justify-center items-center rounded-full bg-[#29190B] ${isOpen &&"py-4 w-[100%] ps-2 pe-4 flex items-center gap-3 text-[#FF993C] rounded-full bg-[#29190B]"}`}
                 aria-current="page"
               >
@@ -52,7 +52,7 @@ export default function Navbar() {
             </li>
             <li className={`${isOpen && "w-[80%] "} lg:flex hidden`}>
               <button
-                href="#"
+               
                 className={`p-3 lg:flex hidden justify-center items-center rounded-full bg-[#29190B] `}
                 aria-current="page"
               >

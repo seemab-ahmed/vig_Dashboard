@@ -1,12 +1,24 @@
-import React from "react";
+import React,{useState} from "react";
 import taxans from "../../../assets/taxans.png";
 import Graph from "../../../assets/Graph.png";
 import { ButtonRightArrow, StarSvg } from "../../../icons-svgs/Svgs";
+import MainModalBettting from "../MainModalBettting";
 
 function AccordianData({ hiddenflag }) {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const handleWalletSelection = () => {
+    setIsModalOpen(true);
+  };
+
+  const closeModal = () => {
+    setIsModalOpen(false);
+  };
+
+
   return (
     <div className=" mb-16">
-      <div className="flex lg:flex-row flex-col lg:gap-0 gap-5 justify-between items-center bg-gradient-light mb-5 flex-wrap lg:py-0 pb-3">
+      <div className="flex lg:flex-row flex-col lg:gap-0 gap-5 justify-between items-center bg-gradient-light mb-5 flex-wrap lg:py-2 pb-3">
         <p className="text-[#FF993C]">Aug 11, 2023</p>
         <div>
         {hiddenflag ? (
@@ -35,15 +47,16 @@ function AccordianData({ hiddenflag }) {
         <div className="flex items-center justify-center gap-2">
           <button
             href="#"
-            className=" p-3  rounded-full bg-[#29190B]"
+            className=" p-2  rounded-full bg-[#29190B]"
             aria-current="page"
           >
             <StarSvg />
           </button>
           <button
-            href="#"
-            className=" p-3  rounded-full bg-[#29190B] text-[#FF993C] flex items-center gap-2"
+           
+            className=" px-3 py-2  rounded-full bg-[#29190B] text-[#FF993C] flex items-center gap-2"
             aria-current="page"
+            onClick={handleWalletSelection} 
           >
             More info <ButtonRightArrow />
           </button>
@@ -161,6 +174,7 @@ function AccordianData({ hiddenflag }) {
           </div>
         </div>
       </div>
+      <MainModalBettting isOpen={isModalOpen} onClose={closeModal} />
     </div>
   );
 }

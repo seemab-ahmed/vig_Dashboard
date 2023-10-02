@@ -8,8 +8,8 @@ const MainAccordian = ({ items }) => {
   };
 
   return (
-    <div>
-      <div>
+  
+      <div className="w-[100%]">
         {items.map((item, index) => (
           <div key={index} className=" rounded-md border-t border-[#0000001c]">
             <button
@@ -48,7 +48,7 @@ const MainAccordian = ({ items }) => {
           </div>
         ))}
       </div>
-    </div>
+    
   );
 };
 

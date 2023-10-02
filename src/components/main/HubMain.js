@@ -1,38 +1,21 @@
 import Footer from "../utils/Footer";
 import Navbar from "../utils/Navbar";
-import AccordianData from "./accordian/AccordianData";
-import MainAccordian from "./accordian/MainAccordian";
 import Blog from "./Blog";
+import TeamAccordian from "./eventsaccordian/TeamAccordian";
 import MatchOfTheDay from "./MatchOfTheDay";
-
+import TopMainSlider from "./TopMainSlider";
 export default function HubMain(){
 
-  const items = [
-    {
-      title: "NFL",
-      content:[ <AccordianData />,<AccordianData hiddenflag={true}/>,<AccordianData hiddenflag={true}/>,<AccordianData hiddenflag={true}/>]
-    },
-    {
-      title: "MLS",
-      content:[ <AccordianData />,<AccordianData hiddenflag={true}/>,<AccordianData hiddenflag={true}/>,<AccordianData hiddenflag={true}/>]
-    },
-    {
-      title: "XLF",
-      content:[ <AccordianData />,<AccordianData hiddenflag={true}/>,<AccordianData hiddenflag={true}/>,<AccordianData hiddenflag={true}/>]
-    },
-    {
-      title: "XLF",
-      content:[ <AccordianData />,<AccordianData hiddenflag={true}/>,<AccordianData hiddenflag={true}/>,<AccordianData hiddenflag={true}/>]
-    },
-  ];
-    
+
     return(
       <div className="bg-[#100a04]">
         <Navbar/>
+        <TopMainSlider/>
         <MatchOfTheDay/>
-        <MainAccordian  items={items} />
+        <TeamAccordian/>
         <Blog/>
         <Footer/>
+        
       </div>
         )
 }
