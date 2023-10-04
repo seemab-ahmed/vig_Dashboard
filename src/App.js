@@ -12,6 +12,8 @@ import StatsMain from './components/stastistics/StatsMain';
 import Fav from './components/Favourite/Fav';
 import OddsCal from './components/calculateodds/OddsCal';
 import GameInfo from './components/gameinformation/GameInfo';
+import NewsOfDay from './components/newsoftheday/NewsOfDay';
+import BettingMechSpecific from './components/bettingmechenic/BettingMechSpecific';
 
 function App() {
   return (
@@ -20,12 +22,16 @@ function App() {
         <Routes>
           <Route path="/" element={<LoginEmail />} />
           <Route path="/password" element={<UserNamePw />} />
+          <Route path="/gameInfo" element={<GameInfo />} />
+          <Route path="/oddscal" element={<OddsCal />} />
           <Route path="/walletselection" element={<WalletOptions />} />
           <Route path="/hubmain" element={<HubMain />} />
           <Route path="/statsmain" element={<StatsMain />} />
           <Route path="/favourite" element={<Fav />} />
           <Route path="/calculateodds" element={<OddsCal />} />
           <Route path="/gameinformation" element={<GameInfo />} />
+          <Route path="/newsofday" element={<NewsOfDay />} />
+          <Route path="/bettingmechspecific" element={<BettingMechSpecific/> } />
         </Routes>
       </Router>
     </div>

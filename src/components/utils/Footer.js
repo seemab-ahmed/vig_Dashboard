@@ -3,7 +3,7 @@ import { ButtonRightArrow } from '../../icons-svgs/Svgs'
 
 export default function Footer() {
   return (
-    <div className='flex lg:flex-row flex-col justify-between items-center lg:px-32 px-10 py-2 border-t border-[#ffffff2a]'>
+    <div className='flex lg:flex-row flex-col justify-between items-center lg:px-32 px-10 py-2 border-t border-[#ffffff2a] bg-[#100a04]'>
         <div><p className='text-[#FF993C]'>© VIG, Inc.</p></div>
         <div className='flex'>
             <button className='text-[#FF993C]'>Terms</button>

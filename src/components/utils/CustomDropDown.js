@@ -28,7 +28,7 @@ const CustomDropDown = () => {
       <span className="mr-2"> <DropdownArrow /></span>
     </button>
     {isDropdownOpen && (
-      <div className="absolute mt-2 py-2 w-40 bg-white border border-gray-300 rounded-lg shadow-lg">
+      <div className="absolute mt-2 py-2 w-40 bg-white border border-gray-300 rounded-lg shadow-lg z-20">
         {options.map((option) => (
           <div
             key={option.value}

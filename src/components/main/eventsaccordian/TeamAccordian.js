@@ -20,6 +20,11 @@ const tabs = [
   { id: "tab7", icon: null, label: "Coming Soon" },
   { id: "tab8", icon: null, label: "Coming Soon" },
   { id: "tab9", icon: null, label: "Coming Soon" },
+  { id: "tab10", icon: null, label: "Coming Soon" },
+  { id: "tab11", icon: null, label: "Coming Soon" },
+  { id: "tab12", icon: null, label: "Coming Soon" },
+  { id: "tab13", icon: null, label: "Coming Soon" },
+  { id: "tab14", icon: null, label: "Coming Soon" },
 ];
 
 export default function TeamAccordian() {
@@ -40,7 +45,7 @@ export default function TeamAccordian() {
             <BackArrow />
           </button>
           <div className="overflow-auto">
-            <div className="flex space-x-1 items-center justify-start w-[120em]">
+            <div className="flex space-x-1 items-center justify-start w-[130em]">
               {tabs.map((tab) => (
                 <button
                   key={tab.id}

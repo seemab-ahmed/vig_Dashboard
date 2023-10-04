@@ -10,7 +10,7 @@ export default function Fav() {
     
     <div className="lg:px-32 px-10 ">
           <h1 className="text-[#FF993C] lg:text-5xl text-3xl font-semibold my-5">
-            Statistics
+          Favourites
           </h1>
           <AccordianData/>
           <AccordianData/>

@@ -62,7 +62,7 @@ function AccordianData({ hiddenflag }) {
           </button>
         </div>
       </div>
-      <div className="flex lg:justify-between justify-center lg:gap-5 gap-10">
+      <div className="flex lg:justify-between md:justify-between justify-center lg:gap-5 gap-2 lg:w-auto md:w-[32em]  m-auto">
         <div>
           <div className="flex items-center lg:gap-9 gap-2 mb-2">
             <img src={taxans} alt="err" className="w-20 " />
@@ -127,7 +127,7 @@ function AccordianData({ hiddenflag }) {
           <div>
             <img src={Graph} alt="err" />
           </div>
-          <div className="flex lg:flex-row flex-col gap-3">
+          <div className="flex lg:flex-row flex-col gap-3 w-[14em]">
             <button className="flex items-center gap-1 bg-[#29190B] text-[#FF993C] py-2 ps-4 px-5 rounded-full  text-left">
               Advance info
             </button>

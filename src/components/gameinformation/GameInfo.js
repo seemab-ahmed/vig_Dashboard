@@ -14,8 +14,8 @@ export default function GameInfo() {
           </h1>
           <AccordianData/>
           <BettingGraph/>
-          <Blog/>
           </div>
+          <Blog/>
         <Footer/>
     </div>
   )

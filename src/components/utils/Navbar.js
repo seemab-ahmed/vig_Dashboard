@@ -22,7 +22,7 @@ export default function Navbar() {
           </button>
           <div className="lg:flex gap-2 hidden ">
             <CustomDropDown />
-            <button className="flex items-center gap-1 bg-[#29190B] text-[#FF993C] py-2 ps-4 px-5 rounded-full  text-left">
+            <button className="flex items-center gap-1 bg-[#29190B] text-[#FF993C] py-2 ps-4 px-5 rounded-full  text-left" onClick={()=>{navigate("/oddscal")}}>
               HUB <ButtonRightArrow />
             </button>
           </div>
@@ -37,7 +37,7 @@ export default function Navbar() {
                
                 className={`p-3 flex justify-center items-center rounded-full bg-[#29190B] ${isOpen &&"py-4 w-[100%] ps-2 pe-4 flex items-center gap-3 text-[#FF993C] rounded-full bg-[#29190B]"}`}
                 aria-current="page"
-              >
+             onClick={()=>{navigate("/gameInfo")}} >
                <ShowMore/> {isOpen &&<p>BET</p>} 
               </button>
             </li>
