@@ -1,14 +1,14 @@
 import React from "react";
 import taxans from "../../assets/taxans.png";
 import eagle from "../../assets/eagle.png";
-import vs from "../../assets/vs-vs 1.png";
+import vs from "../../assets/vs.gif";
 
 export default function MatchOfTheDay() {
   return (
     <div className="flex justify-between lg:flex-row flex-col items-center lg:px-32 px-10  py-[4em]">
       <div className="lg:w-[10em] flex flex-col justify-between gap-[1em]">
         <div>
-          <h2 className="text-[#FF993C] text-5xl">MATCH OF THE DAY</h2>
+          <h2 className="text-[#FF993C] lg:text-5xl text-3xl">MA<span className="fontfamily">T</span>CH O<span className="fontfamily">F</span> TH<span className="fontfamily">E</span> D<span className="fontfamily">A</span>Y</h2>
         </div>
         <div className="flex lg:flex-col flex-row gap-[1em] justify-between">
         <div>
@@ -26,7 +26,7 @@ export default function MatchOfTheDay() {
           <img src={taxans} alt="err" />
         </div>
         <div>
-          <p className="text-[#FF993C] text-2xl my-3">Houston Texans</p>
+          <p className="text-[#FF993C] text-2xl my-3"><span className="fontfamily">Houston Texans</span></p>
         </div>
         <div>
           <p className="text-[#ff9a3c76] text-center ">MoneyLine</p>
@@ -42,7 +42,7 @@ export default function MatchOfTheDay() {
       <div className="lg:w-[10em] flex lg:flex-col justify-between items-center ">
         
         <div>
-          <h2 className="text-[#FF993C] text-2xl text-center mb-2">NFL</h2>
+          <h2 className="text-[#FF993C] text-2xl text-center mb-2">N<span className="fontfamily">F</span>L</h2>
 
           <h2 className="text-[#FF993C] bg-[#1F1307] flex justify-center rounded-3xl px-3 gap-1">
             {" "}
@@ -64,7 +64,7 @@ export default function MatchOfTheDay() {
           <img src={eagle} alt="err" />
         </div>
         <div>
-          <p className="text-[#FF993C] text-2xl my-3">Baltimore Ravens</p>
+          <p className="text-[#FF993C] text-2xl my-3"><span className="fontfamily">Baltimore Ravens</span></p>
         </div>
         <div>
           <p className="text-[#ff9a3c76] text-center ">MoneyLine</p>

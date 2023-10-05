@@ -10,8 +10,8 @@ export default function Blog() {
   return (
     <div className="lg:px-32 px-10 pt-16 pb-10">
   <div className="flex flex-col lg:flex-row justify-between pb-10">
-    <h2 className="text-[#FF993C] lg:text-5xl text-3xl font-semibold">
-      BLOG
+    <h2 className="text-[#FF993C] lg:text-[64px] text-3xl ">
+      BLO<span className="fontfamily">G</span>
     </h2>
     <div>
       <button className="flex items-center gap-1 bg-[#29190B] text-[#FF993C] py-2 ps-4 px-5 rounded-full text-left">
@@ -19,9 +19,9 @@ export default function Blog() {
       </button>
     </div>
   </div>
-  <div className="flex flex-wrap gap-5 justify-center items-center">
+  <div className="flex lg:flex-nowrap flex-wrap gap-5 lg:justify-between justify-center items-center lg:w-full w-[80%] mx-auto">
     {/* Blog Card 1 */}
-    <div className="flex lg:flex-row md:flex-row flex-col gap-3 items-center lg:w-3/6 " onClick={()=>{navigate("/newsofday")}}>
+    <div className="flex lg:flex-row md:flex-row flex-col gap-3 items-center lg:w-[50%]  w-full" onClick={()=>{navigate("/newsofday")}}>
       <div className="lg:w-full h-full">
         <img className="min-w-[8em] h-full" src={Player} alt="" />
       </div>
@@ -53,7 +53,7 @@ export default function Blog() {
     </div>
 
     {/* Blog Card 2 */}
-    <div className="flex flex-col gap-3 items-center lg:w-1-6">
+    <div className="flex flex-col gap-3 items-center lg:w-[25%] w-full">
       <div>
         <img src={rackbiplayer} alt="" />
       </div>
@@ -78,7 +78,7 @@ export default function Blog() {
     </div>
 
     {/* Blog Card 3 */}
-    <div className="flex flex-col gap-3 items-center lg:w-1/6">
+    <div className="flex flex-col gap-3 items-center lg:w-[25%]  w-full">
       <div>
         <img src={SecondRckbi} alt="" />
       </div>

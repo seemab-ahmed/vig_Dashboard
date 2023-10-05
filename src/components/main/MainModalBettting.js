@@ -45,7 +45,7 @@ export default function MainModalBettting({ isOpen, onClose }) {
             <div className="flex items-center justify-between mt-8">
               <div className="flex items-center lg:gap-4 gap-2 mb-2">
                 <img src={taxans} alt="err" className="w-14 " />
-                <h2 className="text-2xl text-[#FF993C]"> HOU</h2>
+                <h2 className="text-2xl text-[#FF993C]">  <span className="fontfamily"> HOU</span></h2>
               </div>
               <div>
                 <p className="bg-[#1F1307] rounded-3xl ps-3 pe-1 py-1 flex gap-3 lg:justify-center justify-between items-center lg:w-auto w-[100%]">

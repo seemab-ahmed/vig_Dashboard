@@ -65,8 +65,8 @@ export default function MainCountryAcordian() {
             key={tab.id}
             className={`tab-button-wallet font-semibold ${
               activeTab === tab.id
-                ? "text-[#FF993C]  border-b border-[#FF993C]"
-                : "text-[#ff9a3c62]  border-b border-[#ff9a3c62]"
+                ? "text-[#FF993C] text-[14px] border-b border-[#FF993C]"
+                : "text-[#ff9a3c62] text-[14px] border-b border-[#ff9a3c62]"
             }`}
             onClick={() => handleTabClick(tab.id)}
           >

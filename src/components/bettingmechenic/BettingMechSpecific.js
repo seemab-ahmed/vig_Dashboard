@@ -3,9 +3,9 @@ import { ButtonRightArrow } from "../../icons-svgs/Svgs";
 import SecondRckbi from "../../assets/SecondRckbi.png";
 import { useNavigate } from "react-router-dom";
 import Footer from "../utils/Footer";
-import Navbar from "../utils/Navbar";
 import Sliderbigimage from "../../assets/Sliderbigimage.png";
 import sliderracbi from "../../assets/sliderracbi.png";
+import { NavbarNews } from "../utils/Navbar";
 const cardData = [
   {
     title: "Nike Leans Into In-Person Fitness As Lululemon Cuts Back",
@@ -61,14 +61,14 @@ export default function BettingMechSpecific() {
   ];
   return (
     <>
-      <Navbar />
+      <NavbarNews />
       <div className="pt-16 bg-[#100a04] lg:px-32 px-10">
         <div>
           <h2 className="text-[#FF993C] lg:text-5xl text-3xl font-semibold">
             Betting Mechanics
           </h2>
         </div>
-        <div className="flex  my-10 bg-[#1f1307] lg:-mr-32 -mr-10 lg:-ml-32 -ml-10 lg:px-32 px-10 ">
+        <div className="flex  my-10 bg-[#150d04] lg:-mr-32 -mr-10 lg:-ml-32 -ml-10 lg:px-32 px-10 overflow-scroll">
           {images.map((_, index) => (
             <div
               key={index}
@@ -103,7 +103,7 @@ export default function BettingMechSpecific() {
               className="flex lg:flex-row md:flex-row flex-col gap-5 items-center "
               key={index}
               onClick={() => {
-                navigate("/newsofday");
+                navigate("/specificPost");
               }}
             >
               <div className="lg:h-[15em]">

@@ -14,6 +14,7 @@ import OddsCal from './components/calculateodds/OddsCal';
 import GameInfo from './components/gameinformation/GameInfo';
 import NewsOfDay from './components/newsoftheday/NewsOfDay';
 import BettingMechSpecific from './components/bettingmechenic/BettingMechSpecific';
+import SpecificPost from './components/auth-verif/specificpost/SpecificPost';
 
 function App() {
   return (
@@ -32,6 +33,7 @@ function App() {
           <Route path="/gameinformation" element={<GameInfo />} />
           <Route path="/newsofday" element={<NewsOfDay />} />
           <Route path="/bettingmechspecific" element={<BettingMechSpecific/> } />
+          <Route path="/specificPost" element={<SpecificPost/> } />
         </Routes>
       </Router>
     </div>

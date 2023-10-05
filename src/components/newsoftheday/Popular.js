@@ -32,7 +32,7 @@ const images = [
   <div className="relative lg:ps-32 ps-10 mt-4">
   <div className="flex justify-between items-center lg:pe-32 pe-10">
     <h1 className="lg:text-5xl text-3xl text-[#FF993C] mb-3 py-5">Popular</h1>
-    <div className="lg:flex hidden  items-center justify-between">
+    <div className="flex items-center justify-between">
       <button
         className={`tab-button-wallet font-semibold flex gap-2  h-[40px] w-[40px] rounded-full bg-[#29190B] justify-center items-center`}
         onClick={prevSlide}

@@ -35,9 +35,9 @@ export default function TeamAccordian() {
   };
 
   return (
-    <div className="text-white">
+    <div className="text-white ">
       <div className="lg:px-32 px-10">
-        <h1 className="lg:text-5xl text-3xl font-semibold text-[#FF993C] mb-5">EVENTS</h1>
+        <h1 className="lg:text-[62px] text-3xl font-semibold text-[#FF993C] py-10">E<span className="fontfamily">V</span>EN<span className="fontfamily">T</span>S</h1>
         <div className="flex items-center gap-1">
           <button
             className={`tab-button-wallet font-semibold flex items-center gap-2  py-4 px-[0.9rem] rounded-full bg-[#29190B]`}
@@ -45,11 +45,11 @@ export default function TeamAccordian() {
             <BackArrow />
           </button>
           <div className="overflow-auto">
-            <div className="flex space-x-1 items-center justify-start w-[130em]">
+            <div className="flex space-x-1 items-center justify-start w-[200em]">
               {tabs.map((tab) => (
                 <button
                   key={tab.id}
-                  className={`tab-button-wallet font-semibold flex items-center gap-2  px-4 py-2 rounded-full ${
+                  className={`tab-button-wallet font-semibold flex items-center gap-2 text-[14px] px-4 py-2 rounded-full ${
                     activeTab === tab.id
                       ? "text-black bg-[#FF993C]"
                       : "text-[#ff9a3c62] bg-[#29190B]"

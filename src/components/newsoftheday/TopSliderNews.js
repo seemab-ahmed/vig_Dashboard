@@ -37,7 +37,7 @@ const TopSliderNews = () => {
     <div className="relative lg:ps-32 px-5 mt-4">
       <div className="flex lg:flex-row flex-col justify-between  lg:pe-32 pe-10">
         <h1 className="lg:text-5xl text-3xl text-[#FF993C] mb-3">
-          RECOMMENDED
+        News Of The Day
         </h1>
         <div className="flex  items-center justify-between mb-4">
           <button
@@ -53,7 +53,7 @@ const TopSliderNews = () => {
                 className={`p-[6px] rounded-full ${
                   index === currentIndex
                     ? "bg-[#FF993C]"
-                    : "bg-[#563618] hover:bg-gray-400"
+                    : "bg-[#563618] "
                 }`}
                 onClick={() => setCurrentIndex(index)}
               />
@@ -128,7 +128,7 @@ const TopSliderNews = () => {
               className={`flex flex-row gap-10 items-center justify-center me-10 rounded-2xl p-4   ${
                 index === currentIndex
                   ? "border border-[#563618]"
-                  : " hover:bg-gray-400"
+                  : ""
               }`}
             >
               <div className=" h-[5em] w-[7em] rounded-3xl">

@@ -1,14 +1,14 @@
 import React from "react";
 import { DolarIcon } from "../../icons-svgs/Svgs";
-import Navbar from "../utils/Navbar";
 import Footer from "../utils/Footer";
+import { Navbar } from "../utils/Navbar";
 export default function OddsCal() {
   return (
     <div className="bg-[#100a04]">
       <Navbar />
       <div className="lg:px-32 px-10 ">
-        <h1 className="text-[#FF993C] lg:text-5xl text-3xl font-semibold my-5">
-          How to Calculate Odds
+        <h1 className="text-[#FF993C] lg:text-[62px] text-3xl py-5 my-5 ">
+          H<span className="fontfamily">O</span>W <span className="fontfamily">T</span>O C<span className="fontfamily">A</span>LCULATE ODD<span className="fontfamily">S</span>
         </h1>
         <p className="text-[#ff9a3c4d] text-sm w-[19em]">
           The bet calculator allows you to input your stake & odds in American
@@ -104,8 +104,8 @@ export default function OddsCal() {
                 </p>
               </div>
               <div>
-                <h3 className="text-2xl text-[#FF993C] font-semibold">
-                  $ 440.00
+                <h3 className="text-xl text-[#FF993C] font-semibold">
+               <span className="fontfamily ">   $ 440.00</span>
                 </h3>
               </div>
             </div>
@@ -115,9 +115,9 @@ export default function OddsCal() {
                
               </div>
               <div>
-                <h3 className="text-2xl text-[#FF993C] font-semibold">
-                  $ 876
-                </h3>
+                <h3 className="text-xl text-[#FF993C] font-semibold">
+               <span className="fontfamily ">   $ 876
+  </span>              </h3>
               </div>
             </div>
             <div className="flex flex-col justify-between lg:h-[8em] h-auto lg:gap-0 gap-3">
@@ -126,9 +126,9 @@ export default function OddsCal() {
                
               </div>
               <div>
-                <h3 className="text-2xl text-[#FF993C] font-semibold">
-                  $ 1.909
-                </h3>
+                <h3 className="text-xl text-[#FF993C] font-semibold">
+               <span className="fontfamily ">   $ 1.909
+</span>                </h3>
               </div>
             </div>
             <div className="flex flex-col justify-between lg:h-[8em] h-auto lg:gap-0 gap-3">
@@ -137,9 +137,9 @@ export default function OddsCal() {
               
               </div>
               <div>
-                <h3 className="text-2xl text-[#FF993C] font-semibold">
-                  $ 10/11
-                </h3>
+                <h3 className="text-xl text-[#FF993C] font-semibold">
+               <span className="fontfamily ">   $ 10/11
+</span>                </h3>
               </div>
             </div>
             <div className="flex flex-col justify-between lg:h-[8em] h-auto lg:gap-0 gap-3">
@@ -148,17 +148,17 @@ export default function OddsCal() {
                 
               </div>
               <div>
-                <h3 className="text-2xl text-[#FF993C] font-semibold">
-                52.38%
-                </h3>
+                <h3 className="text-xl text-[#FF993C] font-semibold">
+               <span className="fontfamily "> 52.38%
+   </span>             </h3>
               </div>
             </div>
           </div>
         </div>
       </div>
       <div className="lg:px-32 px-10 pt-5 pb-10 ">
-        <h1 className="text-[#FF993C] lg:text-5xl text-3xl font-semibold my-5">
-        How to Calculate Parlay bet Odds
+        <h1 className="text-[#FF993C] lg:text-[62px] text-3xl py-5 my-5">
+        H<span className="fontfamily ">O</span>W <span className="fontfamily ">T</span>O C<span className="fontfamily ">A</span>LCULATE PARLAY BET ODD<span className="fontfamily ">S</span>
         </h1>
         <p className="text-[#ff9a3c4d] text-sm w-[19em]">
           The bet calculator allows you to input your stake & odds in American
@@ -254,8 +254,8 @@ export default function OddsCal() {
                 </p>
               </div>
               <div>
-                <h3 className="text-2xl text-[#FF993C] font-semibold">
-                  $ 440.00
+                <h3 className="text-xl text-[#FF993C] font-semibold">
+               <span className="fontfamily ">   $ 440.00</span>
                 </h3>
               </div>
             </div>
@@ -265,9 +265,9 @@ export default function OddsCal() {
                
               </div>
               <div>
-                <h3 className="text-2xl text-[#FF993C] font-semibold">
-                  $ 876
-                </h3>
+                <h3 className="text-xl text-[#FF993C] font-semibold">
+               <span className="fontfamily ">   $ 876
+  </span>              </h3>
               </div>
             </div>
             <div className="flex flex-col justify-between lg:h-[8em] h-auto lg:gap-0 gap-3">
@@ -276,9 +276,9 @@ export default function OddsCal() {
                
               </div>
               <div>
-                <h3 className="text-2xl text-[#FF993C] font-semibold">
-                  $ 1.909
-                </h3>
+                <h3 className="text-xl text-[#FF993C] font-semibold">
+               <span className="fontfamily ">   $ 1.909
+</span>                </h3>
               </div>
             </div>
             <div className="flex flex-col justify-between lg:h-[8em] h-auto lg:gap-0 gap-3">
@@ -287,9 +287,9 @@ export default function OddsCal() {
               
               </div>
               <div>
-                <h3 className="text-2xl text-[#FF993C] font-semibold">
-                  $ 10/11
-                </h3>
+                <h3 className="text-xl text-[#FF993C] font-semibold">
+               <span className="fontfamily ">   $ 10/11
+</span>                </h3>
               </div>
             </div>
             <div className="flex flex-col justify-between lg:h-[8em] h-auto lg:gap-0 gap-3">
@@ -298,9 +298,9 @@ export default function OddsCal() {
                 
               </div>
               <div>
-                <h3 className="text-2xl text-[#FF993C] font-semibold">
-                52.38%
-                </h3>
+                <h3 className="text-xl text-[#FF993C] font-semibold">
+               <span className="fontfamily "> 52.38%
+   </span>             </h3>
               </div>
             </div>
           </div>

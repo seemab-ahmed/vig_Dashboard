@@ -30,22 +30,22 @@ export default function StatsTop() {
         <label className="text-[#ff9a3c6e] ps-4 pb-1 text-xs font-semibold ">
           completed across all sports
         </label>
-        <div className=" overflow-auto flex">
-          <div className="flex space-x-2  pt-4 pb-5 w-[10em]">
-            <button className="tab-button-wallet font-semibold text-[#FF993C] px-3 rounded-3xl bg-[#ff9a3c6e] ">
-              MLS1
+        <div className=" overflow-auto flex mt-2 bg-gradient-light">
+          <div className="flex space-x-2  py-3 w-[10em] ">
+            <button className="tab-button-wallet font-semibold text-[#FF993C] px-3 rounded-3xl bg-[#ff9a3c30] ">
+              MLS<span className="fontfamily">(1)</span>
             </button>
-            <button className="tab-button-wallet font-semibold text-[#FF993C] px-3 rounded-3xl bg-[#ff9a3c6e] ">
-              MLS2
+            <button className="tab-button-wallet font-semibold text-[#FF993C] px-3 rounded-3xl bg-[#ff9a3c30] ">
+              MLS<span className="fontfamily">(2)</span>
             </button>
-            <button className="tab-button-wallet font-semibold text-[#FF993C] px-3 rounded-3xl bg-[#ff9a3c6e] ">
-              MLS3
+            <button className="tab-button-wallet font-semibold text-[#FF993C] px-3 rounded-3xl bg-[#ff9a3c30] ">
+              MLS<span className="fontfamily">(3)</span>
             </button>
-            <button className="tab-button-wallet font-semibold text-[#FF993C] px-3 rounded-3xl bg-[#ff9a3c6e] ">
-              MLS4
+            <button className="tab-button-wallet font-semibold text-[#FF993C] px-3 rounded-3xl bg-[#ff9a3c30] ">
+              MLS<span className="fontfamily">(4)</span>
             </button>
-            <button className="tab-button-wallet font-semibold text-[#FF993C] px-3 rounded-3xl bg-[#ff9a3c6e] ">
-              MLS5
+            <button className="tab-button-wallet font-semibold text-[#FF993C] px-3 rounded-3xl bg-[#ff9a3c30] ">
+              MLS<span className="fontfamily">(5)</span>
             </button>
           </div>
         </div>

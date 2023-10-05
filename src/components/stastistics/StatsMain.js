@@ -1,5 +1,5 @@
 import React from "react";
-import Navbar from "../utils/Navbar";
+import { Navbar }from "../utils/Navbar";
 import Footer from "../utils/Footer";
 import {
   ArrowDown,
@@ -13,20 +13,20 @@ export default function StatsMain() {
       <Navbar />
       <div>
         <div className="lg:px-32 px-10">
-          <h1 className="text-[#FF993C] lg:text-5xl text-3xl font-semibold my-5">
-            Statistics
+          <h1 className="text-[#FF993C] lg:text-[60px] text-3xl pt-7 my-5 pb-5">
+            ST<span className="fontfamily">A</span>TISTI<span className="fontfamily">C</span>S
           </h1>
           <StatsTop />
         </div>
         <div className="bg-[#150d04]">
           <div className="lg:px-32 px-10">
-            <h1 className="text-[#FF993C] lg:text-5xl text-3xl py-8 font-semibold my-4">
-              Betting history
+            <h1 className="text-[#FF993C] lg:text-[60px] text-3xl py-8  my-4">
+              B<span className="fontfamily">E</span>TTING HI<span className="fontfamily">S</span>TORY
             </h1>
 
             <div>
               <div className="flex lg:flex-row flex-col  lg:gap-0 gap-5 justify-between items-center bg-gradient-light mb-5 flex-wrap lg:py-3 pb-3">
-                <p className="text-[#FF993C]">Aug 11, 2023</p>
+                <p className="text-[#FF993C]"> <span className="fontfamily">Aug 11, 2023</span></p>
                 <div>
                   <div className="flex items-center gap-5">
                     <h2 className="text-[#FF993C] bg-[#1F1307] flex justify-center rounded-3xl px-3 gap-1">
@@ -34,7 +34,7 @@ export default function StatsMain() {
                       2ND QTR
                     </h2>
                     <p className="text-[#FF993C] text-2xl text-center">
-                      1{"  "}:{"  "}2
+                    <span className="fontfamily">  1{"  "}:{"  "}2</span>
                     </p>
                     <h2 className="text-[#FF993C] bg-[#1F1307] flex justify-center rounded-3xl px-3 gap-1">
                       {" "}
@@ -55,7 +55,7 @@ export default function StatsMain() {
                 <div className="flex w-[50%] lg:justify-between md:justify-between lg:items-start md:items-start sm:flex-row flex-col justify-center items-center gap-3">
                   <div className="flex items-center lg:gap-9 gap-2 mb-2">
                     <img src={taxans} alt="err" className="w-16" />
-                    <h2 className="text-2xl text-[#FF993C]"> HOU</h2>
+                    <h2 className="text-2xl text-[#FF993C]"> <span className="fontfamily">HOU</span></h2>
                   </div>
                   <div>
                     <p className="text-[#ff9a3c5f] text-sm font-semibold">
@@ -94,14 +94,14 @@ export default function StatsMain() {
 
                   <div className="flex :items-center lg:gap-9 gap-2 mb-2">
                     <img src={taxans} alt="err" className="w-16" />
-                    <h2 className="text-2xl text-[#FF993C]"> HOU</h2>
+                    <h2 className="text-2xl text-[#FF993C]"> <span className="fontfamily"> HOU</span></h2>
                   </div>
                 </div>
               </div>
             </div>
             <div>
               <div className="flex lg:flex-row flex-col  lg:gap-0 gap-5 justify-between items-center bg-gradient-light mb-5 flex-wrap lg:py-3 pb-3">
-                <p className="text-[#FF993C]">Aug 11, 2023</p>
+                <p className="text-[#FF993C]"> <span className="fontfamily">Aug 11, 2023</span></p>
                 <div>
                   <div className="flex items-center gap-5">
                     <h2 className="text-[#FF993C] bg-[#1F1307] flex justify-center rounded-3xl px-3 gap-1">
@@ -109,7 +109,7 @@ export default function StatsMain() {
                       2ND QTR
                     </h2>
                     <p className="text-[#FF993C] text-2xl text-center">
-                      1{"  "}:{"  "}2
+                    <span className="fontfamily">  1{"  "}:{"  "}2</span>
                     </p>
                     <h2 className="text-[#FF993C] bg-[#1F1307] flex justify-center rounded-3xl px-3 gap-1">
                       {" "}
@@ -119,10 +119,10 @@ export default function StatsMain() {
                 </div>
                 <div className="flex items-center justify-center gap-2">
                   <button
-                    className=" py-2 px-4 font-semibold  rounded-full bg-[#1E1E1E] text-white flex items-center gap-2"
+                    className=" py-2 px-4 font-semibold  rounded-full bg-[#FF993C] text-black flex items-center gap-2"
                     aria-current="page"
                   >
-                    Event Ended
+                    Game in Play
                   </button>
                 </div>
               </div>
@@ -130,7 +130,7 @@ export default function StatsMain() {
                 <div className="flex w-[50%] lg:justify-between md:justify-between lg:items-start md:items-start sm:flex-row flex-col justify-center items-center gap-3">
                   <div className="flex items-center lg:gap-9 gap-2 mb-2">
                     <img src={taxans} alt="err" className="w-16" />
-                    <h2 className="text-2xl text-[#FF993C]"> HOU</h2>
+                    <h2 className="text-2xl text-[#FF993C]"> <span className="fontfamily">HOU</span></h2>
                   </div>
                   <div>
                     <p className="text-[#ff9a3c5f] text-sm font-semibold">
@@ -169,14 +169,14 @@ export default function StatsMain() {
 
                   <div className="flex :items-center lg:gap-9 gap-2 mb-2">
                     <img src={taxans} alt="err" className="w-16" />
-                    <h2 className="text-2xl text-[#FF993C]"> HOU</h2>
+                    <h2 className="text-2xl text-[#FF993C]"> <span className="fontfamily"> HOU</span></h2>
                   </div>
                 </div>
               </div>
             </div>
             <div>
               <div className="flex lg:flex-row flex-col  lg:gap-0 gap-5 justify-between items-center bg-gradient-light mb-5 flex-wrap lg:py-3 pb-3">
-                <p className="text-[#FF993C]">Aug 11, 2023</p>
+                <p className="text-[#FF993C]"> <span className="fontfamily">Aug 11, 2023</span></p>
                 <div>
                   <div className="flex items-center gap-5">
                     <h2 className="text-[#FF993C] bg-[#1F1307] flex justify-center rounded-3xl px-3 gap-1">
@@ -184,7 +184,7 @@ export default function StatsMain() {
                       2ND QTR
                     </h2>
                     <p className="text-[#FF993C] text-2xl text-center">
-                      1{"  "}:{"  "}2
+                    <span className="fontfamily">  1{"  "}:{"  "}2</span>
                     </p>
                     <h2 className="text-[#FF993C] bg-[#1F1307] flex justify-center rounded-3xl px-3 gap-1">
                       {" "}
@@ -194,10 +194,10 @@ export default function StatsMain() {
                 </div>
                 <div className="flex items-center justify-center gap-2">
                   <button
-                    className=" py-2 px-4 font-semibold  rounded-full bg-[#CB233E] text-white flex items-center gap-2"
+                    className=" py-2 px-4 font-semibold  rounded-full bg-[#FF993C] text-black flex items-center gap-2"
                     aria-current="page"
                   >
-                    Bet Closed
+                    Game in Play
                   </button>
                 </div>
               </div>
@@ -205,7 +205,7 @@ export default function StatsMain() {
                 <div className="flex w-[50%] lg:justify-between md:justify-between lg:items-start md:items-start sm:flex-row flex-col justify-center items-center gap-3">
                   <div className="flex items-center lg:gap-9 gap-2 mb-2">
                     <img src={taxans} alt="err" className="w-16" />
-                    <h2 className="text-2xl text-[#FF993C]"> HOU</h2>
+                    <h2 className="text-2xl text-[#FF993C]"> <span className="fontfamily">HOU</span></h2>
                   </div>
                   <div>
                     <p className="text-[#ff9a3c5f] text-sm font-semibold">
@@ -244,11 +244,12 @@ export default function StatsMain() {
 
                   <div className="flex :items-center lg:gap-9 gap-2 mb-2">
                     <img src={taxans} alt="err" className="w-16" />
-                    <h2 className="text-2xl text-[#FF993C]"> HOU</h2>
+                    <h2 className="text-2xl text-[#FF993C]"> <span className="fontfamily"> HOU</span></h2>
                   </div>
                 </div>
               </div>
             </div>
+          
           </div>
         </div>
       </div>
