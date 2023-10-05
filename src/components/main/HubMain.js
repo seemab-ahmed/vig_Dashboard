@@ -13,11 +13,11 @@ export default function HubMain(){
         <TopMainSlider/>
         <MatchOfTheDay/>
         <TeamAccordian/>
-        <div className="relative">
-        <div className="bg-custom-radial-gradientnd w-[50em] h-[50em] absolute -left-[32em] -top-20">
-        </div>
+        {/* <div className="relative">
+        <div className="bg-custom-radial-gradientnd w-[50em] h-[50em] absolute -left-[32em] -top-20"> */}
+        {/* </div> */}
         <Blog/>
-        </div>
+        {/* </div> */}
         <Footer/>
         
       </div>
