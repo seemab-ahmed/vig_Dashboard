@@ -50,7 +50,7 @@ export default function TeamAccordian() {
 
   return (
     <div className="text-white ">
-      <div className="lg:px-32 px-10">
+      <div className="lg:px-32 px-5">
         <h1 className="lg:text-[62px] text-3xl text-[#FF993C] py-10">
           E<span className="fontfamily">V</span>EN
           <span className="fontfamily">T</span>S

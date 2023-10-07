@@ -14,7 +14,7 @@ export default function UserNamePw({ setTokenState }) {
         <div className=" lg:w-[30%] sm:w-[25%] bg-loginpsw hidden lg:block sm:block"></div>
         <div className="lg:w-[70%] sm:w-[75%] w-full border bg-black flex flex-col justify-between  pb-6 pt-10 lg:pe-20 sm:pe-10 pe-0">
           <div className="flex flex-col justify-center items-center">
-            <h2 className="lg:text-[64px] sm:text-4xl text-3xl text-[#FF993C] py-5 capitalize text-center">
+            <h2 className="lg:text-[64px] text-[42px] text-[#FF993C] py-5 capitalize text-center">
               {state.state ? (
                 <>
                   Y<span className="fontfamily">O</span>U{" "}

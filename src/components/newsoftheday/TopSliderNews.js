@@ -129,7 +129,7 @@ const TopSliderNews = () => {
             >
               <div className=" h-[5em] w-[8em] rounded-3xl">
                 <img
-                  className="w-full h-full rounded-3xl"
+                  className="w-full h-full rounded-3xl object-cover"
                   src={Sliderbigimage}
                   alt=""
                 />

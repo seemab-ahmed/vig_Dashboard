@@ -7,7 +7,7 @@ import { useNavigate } from "react-router-dom";
 export default function BettingMech() {
   const navigate = useNavigate();
   return (
-    <div className=" pt-16 pb-10 bg-[#150d04] lg:px-32 px-10">
+    <div className=" pt-16 pb-10 bg-[#150d04] lg:px-32 px-5">
       <div className="flex md:flex-row lg:flex-row flex-col justify-between pb-10 gap-5">
       <h2 className="text-[#FF993C] lg:text-[42px] text-3xl">
           BETTI<span className="fontfamily">N</span>G MEC<span className="fontfamily">H</span>ANICS

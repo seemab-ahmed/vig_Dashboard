@@ -31,28 +31,28 @@ const items = [
   {
     title: "MLS",
     content: [
-      <AccordianData img={taxans} img2={bal}/>,
-      <AccordianData hiddenflag={true}  img={SF} img2={pit}/>,
-      <AccordianData hiddenflag={true} img={det}  img2={kc}/>,
-      <AccordianData hiddenflag={true} img={baf}  img2={nco} />,
+      <AccordianData img={taxans} img2={bal} name={"HOU"} name2={"BAL"} />,
+      <AccordianData hiddenflag={true}  img={SF} img2={pit} name={"SF"} name2={"PIT"}  />,
+      <AccordianData hiddenflag={true} img={det}  img2={kc} name={"DET"} name2={"KC"} />,
+      <AccordianData hiddenflag={true} img={baf}  img2={nco} name={"BUF"} name2={"NYJ"}  />,
     ],
   },
   {
     title: "XLF",
     content: [
-      <AccordianData img={taxans} img2={bal}/>,
-      <AccordianData hiddenflag={true}  img={SF} img2={pit}/>,
-      <AccordianData hiddenflag={true} img={det}  img2={kc}/>,
-      <AccordianData hiddenflag={true} img={baf}  img2={nco} />,
+      <AccordianData img={taxans} img2={bal} name={"HOU"} name2={"BAL"} />,
+      <AccordianData hiddenflag={true}  img={SF} img2={pit} name={"SF"} name2={"PIT"}  />,
+      <AccordianData hiddenflag={true} img={det}  img2={kc} name={"DET"} name2={"KC"} />,
+      <AccordianData hiddenflag={true} img={baf}  img2={nco} name={"BUF"} name2={"NYJ"}  />,
     ],
   },
   {
     title: "XLF",
     content: [
-      <AccordianData img={taxans} img2={bal}/>,
-      <AccordianData hiddenflag={true}  img={SF} img2={pit}/>,
-      <AccordianData hiddenflag={true} img={det}  img2={kc}/>,
-      <AccordianData hiddenflag={true} img={baf}  img2={nco} />,
+      <AccordianData img={taxans} img2={bal} name={"HOU"} name2={"BAL"} />,
+      <AccordianData hiddenflag={true}  img={SF} img2={pit} name={"SF"} name2={"PIT"}  />,
+      <AccordianData hiddenflag={true} img={det}  img2={kc} name={"DET"} name2={"KC"} />,
+      <AccordianData hiddenflag={true} img={baf}  img2={nco} name={"BUF"} name2={"NYJ"}  />,
     ],
   },
 ];
@@ -66,7 +66,7 @@ export default function MainCountryAcordian() {
 
   return (
     <div className="text-white w-[100%]">
-      <div className="flex space-x-4 items-center justify-start pt-4 pb-5 lg:px-32 px-10 overflow-auto">
+      <div className="flex space-x-4 items-center justify-start pt-4 pb-5 lg:px-32 px-5 overflow-auto">
         {tabs.map((tab) => (
           <button
             key={tab.id}

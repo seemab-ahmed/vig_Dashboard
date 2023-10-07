@@ -12,14 +12,14 @@ export default function StatsMain() {
       {" "}
       <Navbar />
       <div className="pb-7">
-        <div className="lg:px-32 px-10">
+        <div className="lg:px-32 px-5">
           <h1 className="text-[#FF993C] lg:text-[60px] text-3xl pt-7 my-5 pb-5">
             ST<span className="fontfamily">A</span>TISTI<span className="fontfamily">C</span>S
           </h1>
           <StatsTop />
         </div>
         <div className="bg-[#150d04]">
-          <div className="lg:px-32 px-10">
+          <div className="lg:px-32 px-5">
             <h1 className="text-[#FF993C] lg:text-[60px] text-3xl py-8  my-4">
               B<span className="fontfamily">E</span>TTING HI<span className="fontfamily">S</span>TORY
             </h1>

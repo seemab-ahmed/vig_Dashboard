@@ -5,7 +5,7 @@ import SecondRckbi from "../../assets/SecondRckbi.png";
 import { ButtonRightArrow } from "../../icons-svgs/Svgs";
 export default function Strategies() {
   return (
-    <div className="lg:px-32 px-10 pt-16 pb-10 bg-[#1f1307]">
+    <div className="lg:px-32 px-5 pt-16 pb-10 bg-[#1f1307]">
  <div className="flex md:flex-row lg:flex-row flex-col justify-between pb-10 gap-5">
     <h2 className="text-[#FF993C] lg:text-[42px] text-3xl">
     STRATEGIES

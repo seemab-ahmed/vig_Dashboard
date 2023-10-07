@@ -49,7 +49,7 @@ export default function LoginEmail() {
         >
           <div>
             <div className="flex flex-col justify-center items-center">
-              <h2 className="lg:text-[64px] sm:text-4xl text-4xl text-[#FF993C] py-5 capitalize text-center">
+              <h2 className="lg:text-[64px] text-[42px] text-[#FF993C] py-5 capitalize text-center">
                 {activeTab === "tab1" ? (
                   <>
                   CRE<span className="fontfamily">A</span>TE YO

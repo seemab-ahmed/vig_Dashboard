@@ -5,12 +5,12 @@ import vs from "../../assets/vs.gif";
 
 export default function MatchOfTheDay() {
   return (
-    <div className="flex justify-between lg:flex-row flex-col items-center lg:px-32 px-10  py-[4em]">
-      <div className="lg:w-[12em] flex flex-col justify-between gap-[1em]">
+    <div className="flex justify-between lg:flex-row flex-col items-center lg:px-32 px-5  py-[4em]">
+      <div className="lg:w-[12em] flex flex-col justify-between pb-5 gap-[1em]">
         <div>
-          <h2 className="text-[#FF993C] lg:text-5xl text-3xl">
+          <h2 className="text-[#FF993C] lg:text-[62px] text-[62px] leading-[1em] text-3xl">
             MA<span className="fontfamily">T</span>CH O
-            <span className="fontfamily">F</span>TH
+            <span className="fontfamily">F</span> TH
             <span className="fontfamily">E</span> D
             <span className="fontfamily">A</span>Y
           </h2>

@@ -4,7 +4,9 @@ import { DolarIcon } from "../../icons-svgs/Svgs";
 import { useNavigate } from "react-router-dom";
 export default function MainModalBettting({ isOpen, onClose }) {
   const [toggle, settoggle] = useState(false);
-  const navigate =useNavigate()
+  const navigate = useNavigate();
+
+
   return (
     <div
       id="popup-modal"
@@ -17,11 +19,11 @@ export default function MainModalBettting({ isOpen, onClose }) {
         <div className="relative bg-[#100A04] rounded-3xl shadow">
           <div className="rounded-t-3xl bg-[#1F1307]  px-6  py-2 ">
             <div className=" flex items-center">
-              <p className=" text-[#FF993C]">WNBA</p>
+              <p className=" text-[#fff]">WNBA</p>
               <button
                 onClick={() => onClose()}
                 type="button"
-                className=" bg-[#1F1307] focus:border-transparent text-sm w-10 h-10 ml-auto inline-flex justify-center items-center rounded-full text-[#FF993C]"
+                className=" bg-[#FF993C10] focus:border-transparent text-sm w-10 h-10 ml-auto inline-flex justify-center items-center rounded-full text-[#FF993C]"
                 data-modal-hide="popup-modal"
               >
                 <svg
@@ -45,7 +47,10 @@ export default function MainModalBettting({ isOpen, onClose }) {
             <div className="flex items-center justify-between mt-8">
               <div className="flex items-center lg:gap-4 gap-2 mb-2">
                 <img src={taxans} alt="err" className="w-14 " />
-                <h2 className="text-2xl text-[#FF993C]">  <span className="fontfamily"> HOU</span></h2>
+                <h2 className="text-2xl text-[#FF993C]">
+                  {" "}
+                  <span className="fontfamily"> HOU</span>
+                </h2>
               </div>
               <div>
                 <p className="bg-[#1F1307] rounded-3xl ps-3 pe-1 py-1 flex gap-3 lg:justify-center justify-between items-center lg:w-auto w-[100%]">
@@ -67,7 +72,8 @@ export default function MainModalBettting({ isOpen, onClose }) {
                 <input
                   className={`w-full bg-[#ff9a3c2d] border border-[#ff9a3c62] rounded-full text-[#FF993C] px-5 lg:py-2 sm:py-2  py-2  focus:border-[#FF993C] outline-[#FF993C] placeholder:text-[#FF993C]`}
                   type="text"
-                />
+                /> 
+               
               </div>
             </div>
             <div className="flex flex-col lg:w-[33%]">
@@ -125,61 +131,64 @@ export default function MainModalBettting({ isOpen, onClose }) {
               <input
                 id="small-range"
                 type="range"
-                className="w-full h-[1px] mb-6 bg-[#FF993C] rounded-lg appearance-none cursor-pointer range-sm"
+                className="w-full h-[1px] mb-6 rounded-lg invert cursor-pointer range-sm "
               />
               <div className="-mt-[29px]">
                 <div className=" flex justify-between items-center">
-                
-                <div className="flex flex-col justify-start items-start">
-                <span className="bg-[#FF993C] h-[10px] w-[1px]  px-[1px] "></span>
-                <p className="text-[#FF993C]">1x</p>
+                  <div className="flex flex-col justify-start items-start">
+                    <span className="bg-[#FF993C] h-[10px] w-[1px]  px-[1px] "></span>
+                    <p className="text-[#FF993C]">1x</p>
+                  </div>
+                  <div className="flex flex-col justify-center items-center">
+                    <span className="bg-[#FF993C] h-[10px] w-[1px]  px-[1px] "></span>
+                    <p className="text-[#FF993C]">2x</p>
+                  </div>
+                  <div className="flex flex-col justify-center items-center">
+                    <span className="bg-[#FF993C] h-[10px] w-[1px]  px-[1px] "></span>
+                    <p className="text-[#FF993C]">3x</p>
+                  </div>
+                  <div className="flex flex-col justify-center items-center">
+                    <span className="bg-[#FF993C] h-[10px] w-[1px]  px-[1px] "></span>
+                    <p className="text-[#FF993C]">4x</p>
+                  </div>
+                  <div className="flex flex-col justify-center items-end">
+                    <span className="bg-[#FF993C] h-[10px] w-[1px]  px-[1px] "></span>
+                    <p className="text-[#FF993C]">5x</p>
+                  </div>
                 </div>
-                <div className="flex flex-col justify-center items-center">
-                <span className="bg-[#FF993C] h-[10px] w-[1px]  px-[1px] "></span>
-                <p className="text-[#FF993C]">2x</p>
-                </div>
-                <div className="flex flex-col justify-center items-center">
-                <span className="bg-[#FF993C] h-[10px] w-[1px]  px-[1px] "></span>
-                <p className="text-[#FF993C]">3x</p>
-                </div>
-                <div className="flex flex-col justify-center items-center">
-                <span className="bg-[#FF993C] h-[10px] w-[1px]  px-[1px] "></span>
-                <p className="text-[#FF993C]">4x</p>
-                </div>
-                <div className="flex flex-col justify-center items-end">
-                <span className="bg-[#FF993C] h-[10px] w-[1px]  px-[1px] "></span>
-                <p className="text-[#FF993C]">5x</p>
-                </div>
-              
-              
-               </div>
               </div>
             </div>
-            <div className="bg-[#5e3a1823] p-4 rounded-3xl mt-5 mb-2" >
+            <div className="bg-[#5e3a1823] p-4 rounded-3xl mt-5 mb-2">
               <div className="flex justify-between">
-              <h2 className="text-[#FF993C]">Leverage</h2>
-              <span className="text-black bg-[#FF993C] px-4 py-1 rounded-2xl font-semibold ">
-                    5x
-               </span>
-               </div>
-               <div className="w-[100%] bg-[#FF993C] h-[1px] my-4"></div>
+                <h2 className="text-[#FF993C]">Leverage</h2>
+                <span className="text-black bg-[#FF993C] px-4 py-1 rounded-2xl font-semibold ">
+                  5x
+                </span>
+              </div>
+              <div className="w-[100%] bg-[#FF993C] h-[1px] my-4"></div>
               <div className="flex justify-between">
-              <h2 className="text-[#FF993C]">Point of Liquidation</h2>
-              <span className="text-black bg-[#FF993C] px-4 py-1 rounded-2xl font-semibold ">
-                    +238
-               </span>
-               </div>
+                <h2 className="text-[#FF993C]">Point of Liquidation</h2>
+                <span className="text-black bg-[#FF993C] px-4 py-1 rounded-2xl font-semibold ">
+                  +238
+                </span>
+              </div>
             </div>
           </div>
-            <div className="bg-[#1F1307] pt-4 px-4 rounded-b-3xl mt-5 mb-2" >
-              <p className="ms-4 font-semibold mb-1 text-[#FF993C]">To Win:</p>
-              <div className="flex justify-between bg-[#5e3a1823] items-center py-[10px] px-3 rounded-full">
+          <div className="bg-[#1F1307] pt-4 px-4 rounded-b-3xl mt-5 mb-2">
+            <p className="ms-4 font-semibold mb-1 text-[#FF993C]">To Win:</p>
+            <div className="flex justify-between bg-[#5e3a1823] items-center py-[10px] px-3 rounded-full">
               <h2 className="text-[#FF993C]">$1990</h2>
-             <DolarIcon/>
-               </div>
-              <button onClick={()=>{navigate("/statsmain")}} className="bg-[#FF993C] py-2 rounded-full w-[100%] mt-4 mb-2 text-black font-semibold text-lg">Place bet</button>
-              
+              <DolarIcon />
             </div>
+            <button
+              onClick={() => {
+                navigate("/statsmain");
+              }}
+              className="bg-[#FF993C] py-2 rounded-full w-[100%] mt-4 mb-2 text-black font-semibold text-lg"
+            >
+              Place bet
+            </button>
+          </div>
         </div>
       </div>
     </div>

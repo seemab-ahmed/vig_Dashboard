@@ -157,7 +157,7 @@ export default function BettingMechSpecific() {
           ))}
            
          
-          <div className="bg-[#1f1307] lg:-mx-32 -mx-5 lg:px-32 px-10  flex flex-col gap-5 pt-10 pb-10">
+          <div className="bg-[#1f1307] lg:-mx-32 -mx-5 lg:px-32 px-5  flex flex-col gap-5 pt-10 pb-10">
 
               {cardDataa.map((data, index) => (
                  <div

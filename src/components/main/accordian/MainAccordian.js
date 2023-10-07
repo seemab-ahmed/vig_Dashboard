@@ -16,7 +16,7 @@ const MainAccordian = ({ items }) => {
               onClick={() => toggleAccordion(index)}
               className="w-full text-left focus:outline-none"
             >
-              <div className="flex items-center justify-between bg-[#FF993C] lg:px-32 px-10 py-2">
+              <div className="flex items-center justify-between bg-[#FF993C] lg:px-32 px-5 py-2">
                 <span className=" font-semibold text-black flex gap-2">
                  
 
@@ -41,7 +41,7 @@ const MainAccordian = ({ items }) => {
               </div>
             </button>
             {activeIndex === index && (
-              <div className="p-4 text-[#FF993C] lg:px-32 px-10">
+              <div className="p-4 text-[#FF993C] lg:px-32 px-5">
                 {item.content}
               </div>
             )}
