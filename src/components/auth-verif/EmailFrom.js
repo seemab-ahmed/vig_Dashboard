@@ -55,7 +55,7 @@ export default function EmailForm() {
           </button>
         </form>
         <p className="text-[#ff9a3c96] mt-4 text-center">
-          Already have an account? <a href="#" className="underline text-[#FF993C]">Log in</a>
+          Already have an account? <a href="/" className="underline text-[#FF993C]">Log in</a>
         </p>
       </div>
     </div>
