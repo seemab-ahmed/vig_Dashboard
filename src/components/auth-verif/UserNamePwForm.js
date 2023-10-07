@@ -3,7 +3,7 @@ import { BackArrow, Error, Tick } from '../../icons-svgs/Svgs';
 import { useNavigate } from 'react-router-dom';
 // import { useNavigate } from 'react-router-dom';
 
-export default function UserNamePwForm({setTokenState}) {
+export default function UserNamePwForm() {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
   const [usernameError, setUsernameError] = useState(false);
@@ -30,7 +30,6 @@ const navigate = useNavigate()
       setPasswordError(false);
       setUsernameError(false);
       navigate("/hubmain")
-      setTokenState(true)
     }
   };
   const goBack = () => {

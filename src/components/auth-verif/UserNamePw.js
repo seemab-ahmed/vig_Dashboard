@@ -4,7 +4,7 @@ import { Svgs } from "../../icons-svgs/Svgs";
 import UserNamePwForm from "./UserNamePwForm";
 import { useLocation } from "react-router-dom";
 
-export default function UserNamePw({ setTokenState }) {
+export default function UserNamePw() {
   const location = useLocation();
   const state = location.state;
   console.log(state.state);
@@ -36,7 +36,7 @@ export default function UserNamePw({ setTokenState }) {
           </div>
           <div>
             <div id="tab1" className={`tab-content `}>
-              <UserNamePwForm setTokenState={setTokenState} />
+              <UserNamePwForm />
             </div>
           </div>
           <div className="w-full flex items-center justify-center flex-col gap-4 lg:w-[100%] sm:w-[80%] text-center">

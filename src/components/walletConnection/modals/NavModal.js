@@ -4,7 +4,7 @@ export default function NavModal({setdisplayddown}) {
   return (
     <div
     id="defaultModal"
-    tabIndex="-1"
+    tabindex="-1"
     aria-hidden="true"
     className="fixed top-0 mt-20 left-0 right-0 z-50 w-full p-4 overflow-hidden md:inset-0 h-[calc(100%-1rem)] max-h-full bg-[#0000007a] flex justify-center "
     onClick={() => {
