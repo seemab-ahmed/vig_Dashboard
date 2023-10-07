@@ -4,15 +4,15 @@ export default function NavModal({setdisplayddown}) {
   return (
     <div
     id="defaultModal"
-    tabindex="-1"
+    tabIndex="-1"
     aria-hidden="true"
-    class="fixed top-0 mt-20 left-0 right-0 z-50 w-full p-4 overflow-hidden md:inset-0 h-[calc(100%-1rem)] max-h-full bg-[#0000007a] flex justify-center "
+    className="fixed top-0 mt-20 left-0 right-0 z-50 w-full p-4 overflow-hidden md:inset-0 h-[calc(100%-1rem)] max-h-full bg-[#0000007a] flex justify-center "
     onClick={() => {
         setdisplayddown(false);
       }}
   >
-    <div class="relative w-full max-w-[28rem]  max-h-full">
-      <div class="relative flex flex-col gap-1 bg-black rounded-lg shadow h-[30em] overflow-scroll ">
+    <div className="relative w-full max-w-[28rem]  max-h-full">
+      <div className="relative flex flex-col gap-1 bg-black rounded-lg shadow h-[30em] overflow-scroll ">
         <div className="flex flex-col justify-start items-start self-stretch flex-grow-0 flex-shrink-0 gap-3 p-4 rounded-[32px] bg-[#1f1307]">
           <div className="flex justify-between items-center self-stretch flex-grow-0 flex-shrink-0 relative">
             <p className="flex-grow-0 flex-shrink-0 text-sm font-medium text-left text-[#ff993c]/50">
@@ -75,7 +75,7 @@ export default function NavModal({setdisplayddown}) {
               <path
                 d="M3.33337 10H16.6667M16.6667 10L11.6667 5M16.6667 10L11.6667 15"
                 stroke="#FF993C"
-                stroke-width="1.5"
+                strokeWidth="1.5"
               />
             </svg>
           </div>
@@ -142,7 +142,7 @@ export default function NavModal({setdisplayddown}) {
               <path
                 d="M3.33337 10H16.6667M16.6667 10L11.6667 5M16.6667 10L11.6667 15"
                 stroke="#FF993C"
-                stroke-width="1.5"
+                strokeWidth="1.5"
               />
             </svg>
           </div>
@@ -209,7 +209,7 @@ export default function NavModal({setdisplayddown}) {
               <path
                 d="M3.33337 10H16.6667M16.6667 10L11.6667 5M16.6667 10L11.6667 15"
                 stroke="#FF993C"
-                stroke-width="1.5"
+                strokeWidth="1.5"
               />
             </svg>
           </div>
@@ -276,7 +276,7 @@ export default function NavModal({setdisplayddown}) {
               <path
                 d="M3.33337 10H16.6667M16.6667 10L11.6667 5M16.6667 10L11.6667 15"
                 stroke="#FF993C"
-                stroke-width="1.5"
+                strokeWidth="1.5"
               />
             </svg>
           </div>
@@ -343,7 +343,7 @@ export default function NavModal({setdisplayddown}) {
               <path
                 d="M3.33337 10H16.6667M16.6667 10L11.6667 5M16.6667 10L11.6667 15"
                 stroke="#FF993C"
-                stroke-width="1.5"
+                strokeWidth="1.5"
               />
             </svg>
           </div>
@@ -410,7 +410,7 @@ export default function NavModal({setdisplayddown}) {
               <path
                 d="M3.33337 10H16.6667M16.6667 10L11.6667 5M16.6667 10L11.6667 15"
                 stroke="#FF993C"
-                stroke-width="1.5"
+                strokeWidth="1.5"
               />
             </svg>
           </div>
