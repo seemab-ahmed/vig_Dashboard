@@ -26,7 +26,7 @@ const TopMainSlider = () => {
         <h1 className="lg:text-[62px] md:text-[42px] text-[32px]  font-[400] text-[#FF993C] w-full ">
           R<span className="fontfamily">E</span>COMME<span className="fontfamily">N</span>DED
         </h1>
-        <div className="flex items-center lg:justify-end justify-between w-full gap-">
+        <div className="flex items-center lg:justify-end justify-between w-full gap-3">
           <button
             className="tab-button-wallet font-semibold flex gap-2 h-10 w-10 rounded-full bg-[#29190B] justify-center items-center"
             onClick={prevSlide}
