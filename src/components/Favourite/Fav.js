@@ -10,7 +10,7 @@ export default function Fav() {
          <Navbar />
     
     <div className="lg:px-32 px-10 ">
-          <h1 className="text-[#FF993C] lg:text-5xl text-3xl font-semibold my-5">
+          <h1 className="text-[#FF993C] lg:text-[62px] text-3xl py-5 my-5">
           FA<span className="fontfamily">V</span>OU<span className="fontfamily">R</span>ITES
           </h1>
           <AccordianData/>

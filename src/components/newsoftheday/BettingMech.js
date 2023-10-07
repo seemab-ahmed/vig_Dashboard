@@ -9,8 +9,8 @@ export default function BettingMech() {
   return (
     <div className=" pt-16 pb-10 bg-[#150d04] lg:px-32 px-10">
       <div className="flex md:flex-row lg:flex-row flex-col justify-between pb-10 gap-5">
-        <h2 className="text-[#FF993C] lg:text-3xl text-3xl font-semibold">
-          Betting Mechanics
+      <h2 className="text-[#FF993C] lg:text-[42px] text-3xl">
+          BETTI<span className="fontfamily">N</span>G MEC<span className="fontfamily">H</span>ANICS
         </h2>
         <div>
           <button className="flex items-center gap-1 bg-[#29190B] text-[#FF993C] py-2 ps-4 px-5 rounded-full text-left">
@@ -37,10 +37,10 @@ export default function BettingMech() {
               </button>
             </div>
             <div>
-              <h2 className="text-[#FF993C] underline underline-offset-2 text-xl w-[10em] py-3">
+            <h2 className="text-[#FF993C] leading-6 lg:text-[20px] py-3 lg:pe-12 ">
                 Nike Leans Into In-Person Fitness As Lululemon Cuts Back
               </h2>
-              <p className="text-[#FF993C] w-[15em] truncate">
+              <p className="text-[#FF993C50] w-[15em] truncate">
                 Sports apparel giant Nike has launched “Nike Studios” as the
                 brand jumpstarts its in-person fitness presence with a new group
                 training concept.
@@ -66,10 +66,10 @@ export default function BettingMech() {
               </button>
             </div>
             <div>
-              <h2 className="text-[#FF993C] underline underline-offset-2 text-xl w-[10em] py-3">
+            <h2 className="text-[#FF993C] leading-6 lg:text-[20px] py-3 lg:pe-12 ">
                 Nike Leans Into In-Person Fitness As Lululemon Cuts Back
               </h2>
-              <p className="text-[#FF993C] w-[15em] truncate">
+              <p className="text-[#FF993C50] w-[15em] truncate">
                 Sports apparel giant Nike has launched “Nike Studios” as the
                 brand jumpstarts its in-person fitness presence with a new group
                 training concept.
@@ -95,10 +95,10 @@ export default function BettingMech() {
               </button>
             </div>
             <div>
-              <h2 className="text-[#FF993C] underline underline-offset-2 text-xl w-[10em] py-3">
+            <h2 className="text-[#FF993C] leading-6 lg:text-[20px] py-3 lg:pe-12 ">
                 Nike Leans Into In-Person Fitness As Lululemon Cuts Back
               </h2>
-              <p className="text-[#FF993C] w-[15em] truncate">
+              <p className="text-[#FF993C50] w-[15em] truncate">
                 Sports apparel giant Nike has launched “Nike Studios” as the
                 brand jumpstarts its in-person fitness presence with a new group
                 training concept.
@@ -125,10 +125,10 @@ export default function BettingMech() {
               </button>
             </div>
             <div>
-              <h2 className="text-[#FF993C] underline underline-offset-2 text-xl w-[10em] py-3">
+               <h2 className="text-[#FF993C] leading-6 lg:text-[20px] py-3 lg:pe-12 ">
                 Nike Leans Into In-Person Fitness As Lululemon Cuts Back
               </h2>
-              <p className="text-[#FF993C] w-[15em] truncate">
+              <p className="text-[#FF993C50] w-[15em] truncate">
                 Sports apparel giant Nike has launched “Nike Studios” as the
                 brand jumpstarts its in-person fitness presence with a new group
                 training concept.

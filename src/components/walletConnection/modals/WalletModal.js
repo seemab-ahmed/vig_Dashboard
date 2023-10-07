@@ -23,13 +23,13 @@ export default function WalletModal({ isOpen, onClose }) {
             </div>
             <div className='flex flex-col gap-1'>
             <div className="px-4 py-2 rounded-xl bg-[#1F1307]  text-center flex items-center justify-between">
-           <h3 className='text-[#FF993C] text-2xl  text-left capitalize'> Connect Your wallet</h3>
+           <h3 className='text-[#FF993C] text-2xl  text-left capitalize'>  <span className="fontfamily">Connect Your wallet</span></h3>
             <button>
             <CopyIcon/>
             </button>
             </div>
             <div className='px-3 py-2 rounded-xl bg-[#1F1307]  text-center flex flex-col items-center justify-center'>
-            <h3 className='text-[#FF993C] text-center'>Mobile</h3>
+            <h3 className='text-[#FF993C] text-center pb-1'>Mobile</h3>
             <div className='w-[100%]'>
                 <img className='rounded-3xl w-[100%] ' src={qrcode} alt=''/>
             </div>

@@ -1,10 +1,9 @@
 import React,{useState} from "react";
-import taxans from "../../../assets/taxans.png";
 import Graph from "../../../assets/Graph.png";
 import { ButtonRightArrow, StarSvg } from "../../../icons-svgs/Svgs";
 import MainModalBettting from "../MainModalBettting";
 
-function AccordianData({ hiddenflag }) {
+function AccordianData({ hiddenflag ,img,img2 ,name ,name2}) {
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   const handleWalletSelection = () => {
@@ -17,7 +16,7 @@ function AccordianData({ hiddenflag }) {
 
 
   return (
-    <div className=" mb-16">
+    <div className=" mb-14">
       <div className="flex lg:flex-row flex-col lg:gap-0 gap-5 justify-between items-center bg-gradient-light mb-5 flex-wrap lg:py-2 pb-3">
         <p className="text-[#FF993C]">Aug 11, 2023</p>
         <div>
@@ -31,7 +30,7 @@ function AccordianData({ hiddenflag }) {
         ) : (
           <div className="flex items-center gap-5">
 
-            <h2 className="text-[#FF993C] bg-[#1F1307] flex justify-center rounded-3xl px-3 gap-1">
+            <h2 className="text-[#FF993C] bg-[#1F1307] flex justify-center rounded-3xl px-3 gap-1 ">
               {" "}
               2ND QTR
             </h2>
@@ -63,11 +62,11 @@ function AccordianData({ hiddenflag }) {
           </button>
         </div>
       </div>
-      <div className="flex lg:justify-between md:justify-between justify-center lg:gap-5 gap-2 lg:w-auto md:w-[32em]  m-auto">
+      <div className="flex lg:justify-between md:justify-between justify-center lg:gap-5 gap-2 lg:w-auto md:w-[32em] pb-3 m-auto">
         <div>
           <div className="flex items-center justify-center lg:gap-9 gap-2 mb-4">
-            <img src={taxans} alt="err" className="w-20 " />
-            <h2 className="text-2xl text-[#FF993C]"><span className="fontfamily"> HOU</span></h2>
+            <img src={img} alt="err" className="w-20 " />
+            <h2 className="text-2xl text-[#FF993C]"><span className="fontfamily">{name}</span></h2>
           </div>
           <div className="flex flex-col lg:flex-row gap-1 flex-wrap">
             <div className="flex flex-col justify-center items-center ">
@@ -132,22 +131,22 @@ function AccordianData({ hiddenflag }) {
             <button className="flex items-center gap-1 bg-[#29190B] text-[#FF993C] py-2 ps-4 px-5 rounded-full  text-left text-[14px]">
               Advance info
             </button>
-            <button className="flex items-center gap-1 bg-[#FF993C] text-black py-2 ps-4 px-5 rounded-full font-semibold text-left text-[14px]">
+            <button className="flex items-center gap-1 bg-[#FF993C] text-black py-2 ps-4 px-5 rounded-full font-bold text-left text-[14px]">
               10m$
             </button>
           </div>
         </div>
         <div>
           <div className="flex items-center justify-center lg:gap-9 gap-2 mb-4">
-            <img src={taxans} alt="err" className="w-20 " />
-            <h2 className="text-2xl text-[#FF993C]"> <span className="fontfamily">HOU</span></h2>
+            <img src={img2} alt="err" className="w-20 " />
+            <h2 className="text-2xl text-[#FF993C]"> <span className="fontfamily">{name2}</span></h2>
           </div>
           <div className="flex gap-1 flex-col lg:flex-row flex-wrap">
             <div className="flex flex-col justify-center items-center ">
               <p className="text-[#ff9a3c76] text-[14px]  ">MoneyLine</p>
               <p className="bg-[#1F1307] rounded-3xl ps-3 pe-1 py-1 flex gap-1 lg:justify-center justify-between items-center lg:w-auto w-[100%]">
                 <span className="text-[#FF993C] text-[14px] ">Bet</span>
-                <span className="text-white bg-[#CB233E] px-3 py-1 rounded-2xl text-[14px] ">
+                <span className="text-white bg-[#61AD00] px-3 py-1 rounded-2xl text-[14px] ">
                   -199
                 </span>
               </p>
@@ -156,8 +155,8 @@ function AccordianData({ hiddenflag }) {
               <p className="text-[#ff9a3c76] text-[14px] ">Spread</p>
               <p className="bg-[#1F1307] rounded-3xl ps-3 pe-1 py-1 flex gap-1 lg:justify-center justify-between items-center lg:w-auto w-[100%]">
                 <span className="text-[#FF993C] text-[14px] ">Bet</span>
-                <span className="text-[#CB233E] text-[14px] ">-199</span>
-                <span className="text-white bg-[#CB233E] px-3 py-1 rounded-2xl text-[14px] ">
+                <span className="text-[#61AD00] text-[14px] ">-199</span>
+                <span className="text-white bg-[#61AD00] px-3 py-1 rounded-2xl text-[14px] ">
                   -199
                 </span>
               </p>
@@ -166,8 +165,8 @@ function AccordianData({ hiddenflag }) {
               <p className="text-[#ff9a3c76] text-[14px] ">Spread</p>
               <p className="bg-[#1F1307] rounded-3xl ps-3 pe-1 py-1 flex 1 lg:justify-center justify-between items-center lg:w-auto w-[100%]">
                 <span className="text-[#FF993C] text-[14px] ">Bet</span>
-                <span className="text-[#CB233E] text-[14px] ">-199</span>
-                <span className="text-white bg-[#CB233E] px-3 py-1 rounded-2xl text-[14px] ">
+                <span className="text-[#61AD00] text-[14px] ">-199</span>
+                <span className="text-white bg-[#61AD00] px-3 py-1 rounded-2xl text-[14px] ">
                   -199
                 </span>
               </p>

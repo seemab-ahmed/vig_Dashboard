@@ -3,11 +3,12 @@ import Spinner from '../../utils/Spinner';
 import { useNavigate } from 'react-router-dom';
 export default function LoadingModal({ isOpen, onClose }) {
     const navigate =useNavigate()
+    const state = { state: true };
     useEffect(() => {
         if (isOpen) {
           const timeoutId = setTimeout(() => {
             onClose(); 
-            navigate("/password")
+            navigate('/password', { state: state });
           }, 3000); 
           return () => {
             clearTimeout(timeoutId);
@@ -25,7 +26,7 @@ export default function LoadingModal({ isOpen, onClose }) {
                 <div>
              <Spinner/>
                </div>
-             <h3 className='text-[#FF993C] text-2xl text-center'> Loading...</h3>
+             <h3 className='text-[#FF993C] text-2xl text-center'> <span className="fontfamily">Loading...</span></h3>
              <p className='text-[#FF993C] text-center px-5'>Sign the message in your wallet WalletConnect to sign in safely</p>  
              <button onClick={()=>onClose()} type="button" className="w-[100%] bg-[#29190B] rounded-full text-[#FF993C] px-4 lg:py-3 sm:py-3 py-2  focus:border-[#FF993C] outline-[#FF993C] placeholder:text-[#FF993C]" data-modal-hide="popup-modal">
              Cancel

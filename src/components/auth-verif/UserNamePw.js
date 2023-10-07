@@ -2,21 +2,41 @@
 import React from "react";
 import { Svgs } from "../../icons-svgs/Svgs";
 import UserNamePwForm from "./UserNamePwForm";
+import { useLocation } from "react-router-dom";
 
-export default function UserNamePw({setTokenState}) {
+export default function UserNamePw({ setTokenState }) {
+  const location = useLocation();
+  const state = location.state;
+  console.log(state.state);
   return (
     <div>
       <div className="font-mono min-h-screen flex">
         <div className=" lg:w-[30%] sm:w-[25%] bg-loginpsw hidden lg:block sm:block"></div>
         <div className="lg:w-[70%] sm:w-[75%] w-full border bg-black flex flex-col justify-between  pb-6 pt-10 lg:pe-20 sm:pe-10 pe-0">
           <div className="flex flex-col justify-center items-center">
-            <h2 className="lg:text-5xl sm:text-4xl text-3xl font-bold text-[#FF993C] pb-4 capitalize text-center">
-              Create your VIG account
+            <h2 className="lg:text-[64px] sm:text-4xl text-3xl text-[#FF993C] py-5 capitalize text-center">
+              {state.state ? (
+                <>
+                  Y<span className="fontfamily">O</span>U{" "}
+                  <span className="fontfamily">A</span>RE AL
+                  <span className="fontfamily">M</span>OST TH
+                  <span className="fontfamily">E</span>RE!{" "}
+                </>
+              ) : (
+                <>
+                  CRE<span className="fontfamily">A</span>TE YO
+                  <span className="fontfamily">U</span>R VIG ACCO
+                  <span className="fontfamily">U</span>NT
+                </>
+              )}
             </h2>
+            {state.state ?<p className="text-[#ff9a3c96] text-center">
+            Choose a display name and enter your email address
+              </p>:""}
           </div>
           <div>
             <div id="tab1" className={`tab-content `}>
-              <UserNamePwForm setTokenState={setTokenState}/>
+              <UserNamePwForm setTokenState={setTokenState} />
             </div>
           </div>
           <div className="w-full flex items-center justify-center flex-col gap-4 lg:w-[100%] sm:w-[80%] text-center">

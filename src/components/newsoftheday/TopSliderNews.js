@@ -34,10 +34,10 @@ const TopSliderNews = () => {
   };
 
   return (
-    <div className="relative lg:ps-32 px-5 mt-4">
+    <div className="relative lg:ps-32 px-5">
       <div className="flex lg:flex-row flex-col justify-between  lg:pe-32 pe-10">
-        <h1 className="lg:text-5xl text-3xl text-[#FF993C] mb-3">
-        News Of The Day
+        <h1 className="lg:text-[62px] text-3xl text-[#FF993C] mb-10">
+       NE<span className="fontfamily">W</span>S O<span className="fontfamily">F</span> TH<span className="fontfamily">E</span> D<span className="fontfamily">A</span>Y
         </h1>
         <div className="flex  items-center justify-between mb-4">
           <button
@@ -121,17 +121,13 @@ const TopSliderNews = () => {
             ))}
           </div>
         </div>
-        <div className="flex py-10">
+        <div className="flex  py-10">
           {images.map((_, index) => (
             <div
               key={index}
-              className={`flex flex-row gap-10 items-center justify-center me-10 rounded-2xl p-4   ${
-                index === currentIndex
-                  ? "border border-[#563618]"
-                  : ""
-              }`}
+              className={`flex flex-row gap-5 items-center justify-center rounded-2xl p-4 me-5 `}
             >
-              <div className=" h-[5em] w-[7em] rounded-3xl">
+              <div className=" h-[5em] w-[8em] rounded-3xl">
                 <img
                   className="w-full h-full rounded-3xl"
                   src={Sliderbigimage}
@@ -146,7 +142,7 @@ const TopSliderNews = () => {
                   </button>
                 </div>
                 <div>
-                  <h2 className="text-[#FF993C] underline underline-offset-2 text-xl py-3 ">
+                <h2 className="text-[#FF993C] leading-5 lg:text-[20px] py-3  ">
                     Nike Leans Into In-Person Fitn...
                   </h2>
                 </div>

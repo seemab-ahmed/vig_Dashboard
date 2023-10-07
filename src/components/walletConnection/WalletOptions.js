@@ -11,9 +11,9 @@ export default function WalletOptions() {
   return (
     <div className='text-white'>
       <div className='p-4'>
-        <div className='flex space-x-4 items-center justify-center'>
+        <div className='flex lg:space-x-4 space-x-1 items-center justify-center'>
           <button
-            className={`tab-button-wallet font-semibold ${
+            className={`tab-button-wallet font-semibold text-sm flex ${
               activeTab === 'tab1' ? 'text-[#FF993C]  border-b border-[#FF993C]' : 'text-[#ff9a3c62]'
             }`}
             onClick={() => handleTabClick('tab1')}
@@ -21,7 +21,7 @@ export default function WalletOptions() {
             Ethereum
           </button>
           <button
-            className={`tab-button-wallet font-semibold ${
+            className={`tab-button-wallet font-semibold text-sm flex ${
               activeTab === 'tab2' ? 'text-[#FF993C]  border-b border-[#FF993C]' : 'text-[#ff9a3c69]'
             }`}
             onClick={() => handleTabClick('tab2')}
@@ -29,7 +29,7 @@ export default function WalletOptions() {
             Polygon
           </button>
           <button
-            className={`tab-button-wallet font-semibold ${
+            className={`tab-button-wallet font-semibold text-sm flex ${
               activeTab === 'tab3' ? 'text-[#FF993C]  border-b border-[#FF993C]' : 'text-[#ff9a3c69]'
             }`}
             onClick={() => handleTabClick('tab3')}
@@ -37,12 +37,12 @@ export default function WalletOptions() {
            Tezos
           </button>
           <button
-            className={`tab-button-wallet font-semibold ${
+            className={`tab-button-wallet font-semibold text-sm flex ${
               activeTab === 'tab4' ? 'text-[#FF993C]  border-b border-[#FF993C]' : 'text-[#ff9a3c69]'
             }`}
             onClick={() => handleTabClick('tab4')}
           >
-            Immutable X
+            ImmutableX
           </button>
         </div>
         <div>

@@ -43,22 +43,22 @@ const navigate = useNavigate()
           <div className='flex flex-col'>
             <label className='text-[#FF993C] ps-4 pb-1'>Enter your username:</label>
             <input
-              className={`bg-[#ff9a3c2d] border border-[#ff9a3c62] rounded-full text-[#FF993C] px-4 lg:py-2 sm:py-2  py-2  focus:border-[#FF993C] outline-[#FF993C] placeholder:text-[#FF993C]`}
+              className={`bg-[#ff9a3c2d] border border-[#ff9a3c62] rounded-full text-[#FF993C] px-5 lg:py-2 sm:py-2  py-2  focus:border-[#FF993C] outline-[#FF993C] placeholder:text-[#FF993C]`}
               type='text'
               
               value={username}
               onChange={handleUsernameChange}
             />
             {submitted && usernameError && (
-              <p className='text-red-500 flex items-center gap-2'>
+              <p className='text-red-500 flex items-center gap-2 text-[14px]'>
                 <Error /> Invalid Username
               </p>
             )}
           </div>
           <div className='flex flex-col'>
-            <label className='text-[#FF993C] ps-4 pb-1'>Enter your password:</label>
+            <label className='text-[#FF993C] ps-4 pb-1 '>Enter your password:</label>
             <input
-              className={`bg-[#ff9a3c2d] border border-[#ff9a3c62] rounded-full text-[#FF993C] px-4 lg:py-2 sm:py-2  py-2  focus:border-[#FF993C] outline-[#FF993C] placeholder:text-[#FF993C]`}
+              className={`bg-[#ff9a3c2d] border border-[#ff9a3c62] rounded-full text-[#FF993C] px-5 lg:py-2 sm:py-2  py-2  focus:border-[#FF993C] outline-[#FF993C] placeholder:text-[#FF993C]`}
               type='password'
               
               value={password}
@@ -66,14 +66,14 @@ const navigate = useNavigate()
             />
             {submitted && passwordError && (
            
-              <p className='text-red-500 flex items-center gap-2'>
-                <Error /> Password must be at least 8 characters long
+              <p className='text-red-500 flex items-center gap-2 text-[14px]'>
+                <Error />the password must be 8 characters long
               </p>
             )}
           </div>
-          <div className='flex items-center gap-3'>
+          <div className='flex items-center gap-3 py-4' >
           <Tick/>
-          <p className='text-[#ff9a3c96] '>I have read and accept the <span className='text-[#FF993C]'>Terms of Service</span>, the <span className='text-[#FF993C]'> Terms of Creator</span> and confirm that I am at least 18 years old</p>
+          <p className='text-[#ff9a3c96] leading-5 text-[14px]'>I have read and accept the <span className='text-[#FF993C]'>Terms of Service</span>, the <span className='text-[#FF993C]'> Terms of Creator</span> and confirm that I am at least 18 years old</p>
           </div>
           <button
         

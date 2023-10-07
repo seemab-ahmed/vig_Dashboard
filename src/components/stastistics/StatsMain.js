@@ -8,10 +8,10 @@ import taxans from "../../assets/taxans.png";
 import StatsTop from "./StatsTop";
 export default function StatsMain() {
   return (
-    <div className="bg-[#100a04]">
+    <div className="bg-[#100a04] min-h-[100vh]">
       {" "}
       <Navbar />
-      <div>
+      <div className="pb-7">
         <div className="lg:px-32 px-10">
           <h1 className="text-[#FF993C] lg:text-[60px] text-3xl pt-7 my-5 pb-5">
             ST<span className="fontfamily">A</span>TISTI<span className="fontfamily">C</span>S
@@ -24,6 +24,7 @@ export default function StatsMain() {
               B<span className="fontfamily">E</span>TTING HI<span className="fontfamily">S</span>TORY
             </h1>
 
+            
             <div>
               <div className="flex lg:flex-row flex-col  lg:gap-0 gap-5 justify-between items-center bg-gradient-light mb-5 flex-wrap lg:py-3 pb-3">
                 <p className="text-[#FF993C]"> <span className="fontfamily">Aug 11, 2023</span></p>
@@ -57,14 +58,14 @@ export default function StatsMain() {
                     <img src={taxans} alt="err" className="w-16" />
                     <h2 className="text-2xl text-[#FF993C]"> <span className="fontfamily">HOU</span></h2>
                   </div>
-                  <div>
+                  <div className="flex flex-col gap-1">
                     <p className="text-[#ff9a3c5f] text-sm font-semibold">
                       {" "}
                       Bet size:
                     </p>
                     <p className="text-[#FF993C] font-semibold"> 124</p>
                   </div>
-                  <div>
+                  <div className="flex flex-col gap-1">
                     <p className="text-[#ff9a3c5f] text-sm font-semibold">
                       {" "}
                       Bet size:
@@ -73,7 +74,7 @@ export default function StatsMain() {
                   </div>
                 </div>
                 <div className="flex w-[50%] lg:justify-between md:justify-between lg:items-start md:items-start sm:flex-row flex-col-reverse justify-center items-center gap-3">
-                  <div>
+                  <div className="flex flex-col gap-1">
                     <p className="text-[#ff9a3c5f] text-sm font-semibold">
                       {" "}
                       Bet size:
@@ -81,7 +82,7 @@ export default function StatsMain() {
                     <p className="text-[#FF993C] font-semibold"> 124</p>
                   </div>
                   <div>
-                    <div>
+                    <div  className="flex flex-col gap-1">
                       <p className="text-[#ff9a3c5f] text-sm font-semibold">
                         {" "}
                         Result:
@@ -92,7 +93,7 @@ export default function StatsMain() {
                     </div>
                   </div>
 
-                  <div className="flex :items-center lg:gap-9 gap-2 mb-2">
+                  <div className="flex lg:items-center lg:gap-9 gap-2 mb-2">
                     <img src={taxans} alt="err" className="w-16" />
                     <h2 className="text-2xl text-[#FF993C]"> <span className="fontfamily"> HOU</span></h2>
                   </div>
@@ -132,14 +133,14 @@ export default function StatsMain() {
                     <img src={taxans} alt="err" className="w-16" />
                     <h2 className="text-2xl text-[#FF993C]"> <span className="fontfamily">HOU</span></h2>
                   </div>
-                  <div>
+                  <div className="flex flex-col gap-1">
                     <p className="text-[#ff9a3c5f] text-sm font-semibold">
                       {" "}
                       Bet size:
                     </p>
                     <p className="text-[#FF993C] font-semibold"> 124</p>
                   </div>
-                  <div>
+                  <div className="flex flex-col gap-1">
                     <p className="text-[#ff9a3c5f] text-sm font-semibold">
                       {" "}
                       Bet size:
@@ -148,7 +149,7 @@ export default function StatsMain() {
                   </div>
                 </div>
                 <div className="flex w-[50%] lg:justify-between md:justify-between lg:items-start md:items-start sm:flex-row flex-col-reverse justify-center items-center gap-3">
-                  <div>
+                  <div className="flex flex-col gap-1">
                     <p className="text-[#ff9a3c5f] text-sm font-semibold">
                       {" "}
                       Bet size:
@@ -156,7 +157,7 @@ export default function StatsMain() {
                     <p className="text-[#FF993C] font-semibold"> 124</p>
                   </div>
                   <div>
-                    <div>
+                    <div  className="flex flex-col gap-1">
                       <p className="text-[#ff9a3c5f] text-sm font-semibold">
                         {" "}
                         Result:
@@ -167,7 +168,7 @@ export default function StatsMain() {
                     </div>
                   </div>
 
-                  <div className="flex :items-center lg:gap-9 gap-2 mb-2">
+                  <div className="flex lg:items-center lg:gap-9 gap-2 mb-2">
                     <img src={taxans} alt="err" className="w-16" />
                     <h2 className="text-2xl text-[#FF993C]"> <span className="fontfamily"> HOU</span></h2>
                   </div>
@@ -207,14 +208,14 @@ export default function StatsMain() {
                     <img src={taxans} alt="err" className="w-16" />
                     <h2 className="text-2xl text-[#FF993C]"> <span className="fontfamily">HOU</span></h2>
                   </div>
-                  <div>
+                  <div className="flex flex-col gap-1">
                     <p className="text-[#ff9a3c5f] text-sm font-semibold">
                       {" "}
                       Bet size:
                     </p>
                     <p className="text-[#FF993C] font-semibold"> 124</p>
                   </div>
-                  <div>
+                  <div className="flex flex-col gap-1">
                     <p className="text-[#ff9a3c5f] text-sm font-semibold">
                       {" "}
                       Bet size:
@@ -223,7 +224,7 @@ export default function StatsMain() {
                   </div>
                 </div>
                 <div className="flex w-[50%] lg:justify-between md:justify-between lg:items-start md:items-start sm:flex-row flex-col-reverse justify-center items-center gap-3">
-                  <div>
+                  <div className="flex flex-col gap-1">
                     <p className="text-[#ff9a3c5f] text-sm font-semibold">
                       {" "}
                       Bet size:
@@ -231,7 +232,7 @@ export default function StatsMain() {
                     <p className="text-[#FF993C] font-semibold"> 124</p>
                   </div>
                   <div>
-                    <div>
+                    <div  className="flex flex-col gap-1">
                       <p className="text-[#ff9a3c5f] text-sm font-semibold">
                         {" "}
                         Result:
@@ -242,14 +243,13 @@ export default function StatsMain() {
                     </div>
                   </div>
 
-                  <div className="flex :items-center lg:gap-9 gap-2 mb-2">
+                  <div className="flex lg:items-center lg:gap-9 gap-2 mb-2">
                     <img src={taxans} alt="err" className="w-16" />
                     <h2 className="text-2xl text-[#FF993C]"> <span className="fontfamily"> HOU</span></h2>
                   </div>
                 </div>
               </div>
             </div>
-          
           </div>
         </div>
       </div>

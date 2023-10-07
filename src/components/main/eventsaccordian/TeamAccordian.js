@@ -34,13 +34,31 @@ export default function TeamAccordian() {
     setActiveTab(tab);
   };
 
+  const handleNextTab = () => {
+    const currentIndex = tabs.findIndex((tab) => tab.id === activeTab);
+    if (currentIndex < tabs.length - 1) {
+      setActiveTab(tabs[currentIndex + 1].id);
+    }
+  };
+
+  const handlePrevTab = () => {
+    const currentIndex = tabs.findIndex((tab) => tab.id === activeTab);
+    if (currentIndex > 0) {
+      setActiveTab(tabs[currentIndex - 1].id);
+    }
+  };
+
   return (
     <div className="text-white ">
       <div className="lg:px-32 px-10">
-        <h1 className="lg:text-[62px] text-3xl font-semibold text-[#FF993C] py-10">E<span className="fontfamily">V</span>EN<span className="fontfamily">T</span>S</h1>
+        <h1 className="lg:text-[62px] text-3xl text-[#FF993C] py-10">
+          E<span className="fontfamily">V</span>EN
+          <span className="fontfamily">T</span>S
+        </h1>
         <div className="flex items-center gap-1">
           <button
             className={`tab-button-wallet font-semibold flex items-center gap-2  py-4 px-[0.9rem] rounded-full bg-[#29190B]`}
+            onClick={handlePrevTab}
           >
             <BackArrow />
           </button>
@@ -63,6 +81,7 @@ export default function TeamAccordian() {
           </div>
           <button
             className={`tab-button-wallet font-semibold flex items-center gap-2  py-3 px-[0.8rem] rounded-full bg-[#29190B]`}
+            onClick={handleNextTab}
           >
             <ForwardArrow />
           </button>

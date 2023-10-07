@@ -11,7 +11,7 @@ export default function NewsOfDay() {
   return (
     <>
       <NavbarNews />
-      <div className=" pt-16 pb-10 bg-[#100a04]">
+      <div className=" pt-8 pb-10 bg-[#100a04]">
         {" "}
         <TopSliderNews /> <BettingMech /> <Strategies />
         <Popular />

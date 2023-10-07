@@ -13,7 +13,7 @@ export default function StatsTop() {
       </label>
       <div className="relative">
         <input
-          className={`w-full bg-[#ff9a3c2d] border border-[#ff9a3c62] rounded-full text-[#FF993C]  lg:py-2 sm:py-2  py-2  focus:border-[#FF993C] outline-[#FF993C] `}
+          className={`w-full bg-[#ff9a3c2d] border border-[#ff9a3c62] rounded-full text-[#FF993C] px-5 lg:py-2 sm:py-2  py-2  focus:border-[#FF993C] outline-[#FF993C]`}
           type="text"
         />
         <span className="absolute top-[10px] right-3">
@@ -62,7 +62,7 @@ export default function StatsTop() {
       </div>
       <div className="relative">
         <input
-          className={`w-full bg-[#61AD00] border border-[#ff9a3c62] rounded-full text-white  py-2   px-2 placeholder:text-white font-bold text-lg focus:border-[#FF993C] outline-[#FF993C] `}
+          className={`w-full bg-[#61AD00] border border-[#ff9a3c62] rounded-full text-white  py-2   px-5 placeholder:text-white font-bold text-lg focus:border-[#FF993C] outline-[#FF993C] `}
           type="text"
           placeholder="+ $54"
         />
@@ -83,7 +83,7 @@ export default function StatsTop() {
       </div>
       <div className="relative">
         <input
-          className={`w-full bg-[#61AD00] border border-[#ff9a3c62] rounded-full text-[#FF993C]  py-2 py-2  px-2 placeholder:text-white font-bold text-lg focus:border-[#FF993C] outline-[#FF993C] `}
+          className={`w-full bg-[#61AD00] border border-[#ff9a3c62] rounded-full text-white  py-2   px-5 placeholder:text-white font-bold text-lg focus:border-[#FF993C] outline-[#FF993C] `}
           type="text"
           placeholder="+ $245"
         />

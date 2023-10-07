@@ -7,8 +7,11 @@ export default function OddsCal() {
     <div className="bg-[#100a04]">
       <Navbar />
       <div className="lg:px-32 px-10 ">
-        <h1 className="text-[#FF993C] lg:text-[62px] text-3xl py-5 my-5 ">
-          H<span className="fontfamily">O</span>W <span className="fontfamily">T</span>O C<span className="fontfamily">A</span>LCULATE ODD<span className="fontfamily">S</span>
+        <h1 className="text-[#FF993C] lg:text-[62px] text-3xl py-5 lg:my-5 leading-7">
+          H<span className="fontfamily">O</span>W{" "}
+          <span className="fontfamily">T</span>O C
+          <span className="fontfamily">A</span>LCULATE ODD
+          <span className="fontfamily">S</span>
         </h1>
         <p className="text-[#ff9a3c4d] text-sm w-[19em]">
           The bet calculator allows you to input your stake & odds in American
@@ -26,7 +29,7 @@ export default function OddsCal() {
                 </label>
                 <div className="relative">
                   <input
-                    className={`w-full bg-transparent focus:bg-[#ff9a3c2d] border border-[#ff9a3c62] rounded-full text-[#FF993C]  lg:py-2 sm:py-2  py-2  focus:border-[#FF993C] outline-[#FF993C] placeholder:text-[#FF993C]`}
+                    className={`w-full bg-transparent focus:bg-[#ff9a3c2d] border border-[#ff9a3c62] rounded-full px-5 text-[#FF993C]  lg:py-2 sm:py-2  py-2  focus:border-[#FF993C] outline-[#FF993C] placeholder:text-[#FF993C]`}
                     type="text"
                   />
                 </div>
@@ -41,7 +44,7 @@ export default function OddsCal() {
                 </label>
                 <div className="relative">
                   <input
-                    className={`w-full bg-transparent focus:bg-[#ff9a3c2d] border border-[#ff9a3c62] rounded-full text-[#FF993C]  lg:py-2 sm:py-2  py-2  focus:border-[#FF993C] outline-[#FF993C] placeholder:text-[#FF993C]`}
+                    className={`w-full bg-transparent focus:bg-[#ff9a3c2d] border border-[#ff9a3c62] rounded-full px-5 text-[#FF993C]  lg:py-2 sm:py-2  py-2  focus:border-[#FF993C] outline-[#FF993C] placeholder:text-[#FF993C]`}
                     type="text"
                   />
                   <span className="absolute top-[10px] right-3">
@@ -59,13 +62,12 @@ export default function OddsCal() {
                       to
                     </p>
                   </div>
-                  
                 </div>
                 <div className="relative">
                   <input
                     id="small-range"
                     type="range"
-                    className="w-full h-[1px] mb-6 bg-[#FF993C] rounded-lg  cursor-pointer range-sm"
+                    className="w-full h-[1px] mb-6 bg-[#FF993C] px-5 rounded-lg  cursor-pointer range-sm"
                   />
                   <div className="-mt-[29px]">
                     <div className=" flex justify-between items-center">
@@ -105,60 +107,59 @@ export default function OddsCal() {
               </div>
               <div>
                 <h3 className="text-xl text-[#FF993C] font-semibold">
-               <span className="fontfamily ">   $ 440.00</span>
+                  <span className="fontfamily "> $ 440.00</span>
                 </h3>
               </div>
             </div>
             <div className="flex flex-col justify-between lg:h-[8em] h-auto lg:gap-0 gap-3">
               <div>
                 <p className="text-[#ff9a3c60]">Profit:</p>
-               
               </div>
               <div>
                 <h3 className="text-xl text-[#FF993C] font-semibold">
-               <span className="fontfamily ">   $ 876
-  </span>              </h3>
+                  <span className="fontfamily "> $ 876</span>{" "}
+                </h3>
               </div>
             </div>
             <div className="flex flex-col justify-between lg:h-[8em] h-auto lg:gap-0 gap-3">
               <div>
                 <p className="text-[#ff9a3c60]">Decimal:</p>
-               
               </div>
               <div>
                 <h3 className="text-xl text-[#FF993C] font-semibold">
-               <span className="fontfamily ">   $ 1.909
-</span>                </h3>
+                  <span className="fontfamily "> $ 1.909</span>{" "}
+                </h3>
               </div>
             </div>
             <div className="flex flex-col justify-between lg:h-[8em] h-auto lg:gap-0 gap-3">
               <div>
                 <p className="text-[#ff9a3c60]">Fractional / UK:</p>
-              
               </div>
               <div>
                 <h3 className="text-xl text-[#FF993C] font-semibold">
-               <span className="fontfamily ">   $ 10/11
-</span>                </h3>
+                  <span className="fontfamily "> $ 10/11</span>{" "}
+                </h3>
               </div>
             </div>
             <div className="flex flex-col justify-between lg:h-[8em] h-auto lg:gap-0 gap-3">
               <div>
                 <p className="text-[#ff9a3c60]">Implied Probability:</p>
-                
               </div>
               <div>
                 <h3 className="text-xl text-[#FF993C] font-semibold">
-               <span className="fontfamily "> 52.38%
-   </span>             </h3>
+                  <span className="fontfamily "> 52.38%</span>{" "}
+                </h3>
               </div>
             </div>
           </div>
         </div>
       </div>
       <div className="lg:px-32 px-10 pt-5 pb-10 ">
-        <h1 className="text-[#FF993C] lg:text-[62px] text-3xl py-5 my-5">
-        H<span className="fontfamily ">O</span>W <span className="fontfamily ">T</span>O C<span className="fontfamily ">A</span>LCULATE PARLAY BET ODD<span className="fontfamily ">S</span>
+        <h1 className="text-[#FF993C] lg:text-[62px] text-3xl py-5 leading-7 lg:my-5">
+          H<span className="fontfamily ">O</span>W{" "}
+          <span className="fontfamily ">T</span>O C
+          <span className="fontfamily ">A</span>LCULATE PARLAY BET ODD
+          <span className="fontfamily ">S</span>
         </h1>
         <p className="text-[#ff9a3c4d] text-sm w-[19em]">
           The bet calculator allows you to input your stake & odds in American
@@ -176,7 +177,7 @@ export default function OddsCal() {
                 </label>
                 <div className="relative">
                   <input
-                    className={`w-full bg-transparent focus:bg-[#ff9a3c2d] border border-[#ff9a3c62] rounded-full text-[#FF993C]  lg:py-2 sm:py-2  py-2  focus:border-[#FF993C] outline-[#FF993C] placeholder:text-[#FF993C]`}
+                    className={`w-full bg-transparent focus:bg-[#ff9a3c2d] border border-[#ff9a3c62] rounded-full text-[#FF993C] px-5 lg:py-2 sm:py-2  py-2  focus:border-[#FF993C] outline-[#FF993C] placeholder:text-[#FF993C]`}
                     type="text"
                   />
                 </div>
@@ -191,7 +192,7 @@ export default function OddsCal() {
                 </label>
                 <div className="relative">
                   <input
-                    className={`w-full bg-transparent focus:bg-[#ff9a3c2d] border border-[#ff9a3c62] rounded-full text-[#FF993C]  lg:py-2 sm:py-2  py-2  focus:border-[#FF993C] outline-[#FF993C] placeholder:text-[#FF993C]`}
+                    className={`w-full bg-transparent focus:bg-[#ff9a3c2d] border border-[#ff9a3c62] rounded-full px-5 text-[#FF993C]  lg:py-2 sm:py-2  py-2  focus:border-[#FF993C] outline-[#FF993C] placeholder:text-[#FF993C]`}
                     type="text"
                   />
                   <span className="absolute top-[10px] right-3">
@@ -209,13 +210,12 @@ export default function OddsCal() {
                       to
                     </p>
                   </div>
-                  
                 </div>
                 <div className="relative">
                   <input
                     id="small-range"
                     type="range"
-                    className="w-full h-[1px] mb-6 bg-[#FF993C] rounded-lg  cursor-pointer range-sm"
+                    className="w-full px-5 h-[1px] mb-6 bg-[#FF993C] rounded-lg  cursor-pointer range-sm"
                   />
                   <div className="-mt-[29px]">
                     <div className=" flex justify-between items-center">
@@ -255,52 +255,48 @@ export default function OddsCal() {
               </div>
               <div>
                 <h3 className="text-xl text-[#FF993C] font-semibold">
-               <span className="fontfamily ">   $ 440.00</span>
+                  <span className="fontfamily "> $ 440.00</span>
                 </h3>
               </div>
             </div>
             <div className="flex flex-col justify-between lg:h-[8em] h-auto lg:gap-0 gap-3">
               <div>
                 <p className="text-[#ff9a3c60]">Profit:</p>
-               
               </div>
               <div>
                 <h3 className="text-xl text-[#FF993C] font-semibold">
-               <span className="fontfamily ">   $ 876
-  </span>              </h3>
+                  <span className="fontfamily "> $ 876</span>{" "}
+                </h3>
               </div>
             </div>
             <div className="flex flex-col justify-between lg:h-[8em] h-auto lg:gap-0 gap-3">
               <div>
                 <p className="text-[#ff9a3c60]">Decimal:</p>
-               
               </div>
               <div>
                 <h3 className="text-xl text-[#FF993C] font-semibold">
-               <span className="fontfamily ">   $ 1.909
-</span>                </h3>
+                  <span className="fontfamily "> $ 1.909</span>{" "}
+                </h3>
               </div>
             </div>
             <div className="flex flex-col justify-between lg:h-[8em] h-auto lg:gap-0 gap-3">
               <div>
                 <p className="text-[#ff9a3c60]">Fractional / UK:</p>
-              
               </div>
               <div>
                 <h3 className="text-xl text-[#FF993C] font-semibold">
-               <span className="fontfamily ">   $ 10/11
-</span>                </h3>
+                  <span className="fontfamily "> $ 10/11</span>{" "}
+                </h3>
               </div>
             </div>
             <div className="flex flex-col justify-between lg:h-[8em] h-auto lg:gap-0 gap-3">
               <div>
                 <p className="text-[#ff9a3c60]">Implied Probability:</p>
-                
               </div>
               <div>
                 <h3 className="text-xl text-[#FF993C] font-semibold">
-               <span className="fontfamily "> 52.38%
-   </span>             </h3>
+                  <span className="fontfamily "> 52.38%</span>{" "}
+                </h3>
               </div>
             </div>
           </div>

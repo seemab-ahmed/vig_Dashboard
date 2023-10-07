@@ -82,9 +82,9 @@ export function Navbar() {
                   <StarSvg /> {isOpen && <p>Favourites</p>}
                 </button>
               </li>
-              <li
-                className={`${isOpen ? "w-full lg:flex hidden" : "lg:hidden"}`}
-              >
+              
+              <li className={`${isOpen ? "w-full relative" : "relative"}`}>
+               <span className="p-[7px] rounded-full bg-red-500 border border-red-700 absolute right-0 -top-1 lg:flex hidden" ></span>
                 <button
                   className={`p-3 lg:flex hidden justify-center items-center rounded-full bg-[#29190B]`}
                   aria-current="page"
@@ -174,7 +174,7 @@ export function Navbar() {
                   onClick={() => {
                     setdisplayddown(!displayddown);
                   }}
-                  className=" block w-full py-2 ps-4 text-sm text-gray-900 border border-[#ff9a3c52] bg-[#29190B] placeholder:text-[#FF993C] rounded-3xl focus:border-[#FF993C] outline-none"
+                  className=" block w-full py-2 px-5 text-sm text-gray-900 border border-[#ff9a3c52] bg-[#29190B] placeholder:text-[#FF993C] rounded-3xl focus:border-[#FF993C] outline-none"
                   placeholder="Search"
                 />
            
@@ -578,7 +578,7 @@ export function NavbarNews() {
             <input
               type="text"
               id="search-navbar"
-              className="block w-full py-2 ps-4 text-sm text-gray-900 border border-[#ff9a3c52] bg-[#29190B] placeholder:text-[#FF993C] rounded-3xl focus:border-[#FF993C] outline-none"
+              className="block w-full py-2 px-5 text-sm text-gray-900 border border-[#ff9a3c52] bg-[#29190B] placeholder:text-[#FF993C] rounded-3xl focus:border-[#FF993C] outline-none"
               placeholder="Search"
               onClick={()=>{setdisplayddown(!displayddown)}}
             />

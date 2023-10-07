@@ -34,7 +34,7 @@ const navigate =useNavigate()
           <div className='flex flex-col'>
           <label className='text-[#FF993C] ps-4 pb-1'>Enter your email address:</label>
           <input
-              className={`bg-[#ff9a3c2d] border border-[#ff9a3c62] rounded-full text-[#FF993C] px-4 lg:py-2 sm:py-2  py-2  focus:border-[#FF993C] outline-[#FF993C] placeholder:text-[#FF993C]`}
+              className={`bg-[#ff9a3c2d] border border-[#ff9a3c62] rounded-full text-[#FF993C] px-5  lg:py-2 sm:py-2  py-2  focus:border-[#FF993C] outline-[#FF993C] placeholder:text-[#FF993C]`}
               type='email'
               
               value={email}

@@ -1,7 +1,14 @@
 import React, { useState } from "react";
 import MainAccordian from "../accordian/MainAccordian";
 import AccordianData from "../accordian/AccordianData";
-
+import taxans from "../../../assets/taxans.png";
+import bal from "../../../assets/bal.png";
+import SF from "../../../assets/SF.png";
+import pit from "../../../assets/pit.png";
+import det from "../../../assets/det.png";
+import kc from "../../../assets/kc.png";
+import baf from "../../../assets/baf.png";
+import nco from "../../../assets/nco.png";
 const tabs = [
   { id: "tab1", label: "USA" },
   { id: "tab2", label: "Russia" },
@@ -15,37 +22,37 @@ const items = [
   {
     title: "NFL",
     content: [
-      <AccordianData />,
-      <AccordianData hiddenflag={true} />,
-      <AccordianData hiddenflag={true} />,
-      <AccordianData hiddenflag={true} />,
+      <AccordianData img={taxans} img2={bal} name={"HOU"} name2={"BAL"} />,
+      <AccordianData hiddenflag={true}  img={SF} img2={pit} name={"SF"} name2={"PIT"}  />,
+      <AccordianData hiddenflag={true} img={det}  img2={kc} name={"DET"} name2={"KC"} />,
+      <AccordianData hiddenflag={true} img={baf}  img2={nco} name={"BUF"} name2={"NYJ"}  />,
     ],
   },
   {
     title: "MLS",
     content: [
-      <AccordianData />,
-      <AccordianData hiddenflag={true} />,
-      <AccordianData hiddenflag={true} />,
-      <AccordianData hiddenflag={true} />,
+      <AccordianData img={taxans} img2={bal}/>,
+      <AccordianData hiddenflag={true}  img={SF} img2={pit}/>,
+      <AccordianData hiddenflag={true} img={det}  img2={kc}/>,
+      <AccordianData hiddenflag={true} img={baf}  img2={nco} />,
     ],
   },
   {
     title: "XLF",
     content: [
-      <AccordianData />,
-      <AccordianData hiddenflag={true} />,
-      <AccordianData hiddenflag={true} />,
-      <AccordianData hiddenflag={true} />,
+      <AccordianData img={taxans} img2={bal}/>,
+      <AccordianData hiddenflag={true}  img={SF} img2={pit}/>,
+      <AccordianData hiddenflag={true} img={det}  img2={kc}/>,
+      <AccordianData hiddenflag={true} img={baf}  img2={nco} />,
     ],
   },
   {
     title: "XLF",
     content: [
-      <AccordianData />,
-      <AccordianData hiddenflag={true} />,
-      <AccordianData hiddenflag={true} />,
-      <AccordianData hiddenflag={true} />,
+      <AccordianData img={taxans} img2={bal}/>,
+      <AccordianData hiddenflag={true}  img={SF} img2={pit}/>,
+      <AccordianData hiddenflag={true} img={det}  img2={kc}/>,
+      <AccordianData hiddenflag={true} img={baf}  img2={nco} />,
     ],
   },
 ];
