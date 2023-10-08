@@ -4,11 +4,11 @@ import Footer from "../utils/Footer";
 import { Navbar } from "../utils/Navbar";
 
 const options = [
-  { value: "120", label: "120" },
-  { value: "121", label: "120" },
-  { value: "122", label: "120" },
-  { value: "123", label: "120" },
-  { value: "124", label: "120" },
+  { value: "120", label: "120 USD" },
+  { value: "121", label: "120 USD" },
+  { value: "122", label: "120 USD" },
+  { value: "123", label: "120 USD" },
+  { value: "124", label: "120 USD" },
 
 ];
 export default function OddsCal() {
@@ -35,7 +35,7 @@ export default function OddsCal() {
       <Navbar />
       <div className="lg:px-32 px-5 ">
         <div className="my-10">
-        <h1 className="text-[#FF993C] lg:text-[62px] text-3xl py-5 lg:my-5 leading-7">
+        <h1 className="text-[#FF993C] lg:text-[62px] text-3xl py-5 lg:my-5 lg:leading-[1em] leading-7">
           H<span className="fontfamily">O</span>W{" "}
           <span className="fontfamily">T</span>O C
           <span className="fontfamily">A</span>LCULATE ODD
@@ -47,8 +47,8 @@ export default function OddsCal() {
         </p>
         </div>
         <div className="relative  rounded-t-3xl w-full max-h-full mt-5 bg-[#150D04] ">
-          <div className="relative bg-[#1F1307] rounded-t-3xl shadow px-4">
-            <div className="flex flex-col justify-between items-center lg:flex-row md:flex-row gap-3 py-2 lg:h-[160px] ">
+          <div className="relative bg-[#1F1307] rounded-t-3xl shadow px-4 lg:py-0 pt-4 ">
+          <div className="flex flex-col justify-between items-center lg:flex-row md:flex-row gap-3 py-3">
               <div className="flex flex-col lg:w-[25%] w-full">
                 <label className="text-[#FF993C] text-sm ps-4 pb-1 ">
                   Bet Amount:
@@ -96,7 +96,7 @@ export default function OddsCal() {
                   <input
                     id="small-range"
                     type="range"
-                    className="w-full h-[1px] mb-6 bg-[#FF993C] px-5 rounded-lg  cursor-pointer range-sm invert"
+                    className="w-full h-[1px] mb-6 bg-[#FF993C] rounded-lg  cursor-pointer range-sm invert"
                   />
                   <div className="-mt-[29px]">
                     <div className=" flex justify-between items-center">
@@ -197,11 +197,11 @@ export default function OddsCal() {
         </p>
         </div>
         <div className="relative  rounded-t-3xl w-full max-h-full mt-5 bg-[#150D04] ">
-          <div className="relative bg-[#1F1307] rounded-t-3xl shadow px-4">
-          <div className="flex flex-col justify-between items-center lg:flex-row md:flex-row gap-3 py-2 lg:h-[176px] ">
+        <div className="relative bg-[#1F1307] rounded-t-3xl shadow px-4 lg:py-0 pt-4 ">
+          <div className="flex flex-col justify-between items-center lg:flex-row md:flex-row gap-3 py-3  ">
               <div className="flex flex-col lg:w-[25%] w-full">
                 <div className="flex flex-col gap-2 mb-5">
-                <label className="text-[#FF993C] text-sm ps-4 pb-1 ">
+                <label className="text-[#FF993C] text-sm ps-4 pb-2 ">
                   Bet Amount:
                 </label>
                 <label className="text-[#ff9a3c50] ps-4 pb-1 text-sm ">
@@ -209,13 +209,10 @@ export default function OddsCal() {
                 </label>
                 </div>
                 <div className="relative">
-                  {/* <input
-                   className={`w-full bg-transparent focus:bg-[#ff9a3c2d] border border-[#ff9a3c62] rounded-full px-5 text-[#FF993C]  lg:py-2 sm:py-2  py-2 focus:outline-[#FF993C] focus:ring-2 focus:ring-[#FF993C] focus:border-[#FF993C] placeholder:text-[#FF993C]`}
-                   type="text"
-                  /> */
+                
                   <div className="relative w-full">
                   <div
-                    className="w-full bg-transparent border border-[#ff9a3c62] rounded-full ps-2 text-[#FF993C] h-[2.7em] py-1 focus:ring-2 focus:ring-[#FF993C] focus:border-[#FF993C] placeholder:text-[#FF993C] cursor-pointer flex flex-wrap"
+                    className="w-full items-center bg-transparent border border-[#ff9a3c62] rounded-full ps-2 text-[#FF993C]  py-2 focus:ring-2 focus:ring-[#FF993C] focus:border-[#FF993C] placeholder:text-[#FF993C] cursor-pointer flex flex-wrap"
                     onClick={toggleDropdown}
                   >
                     {selectedOptions.length === 0 ? 'Select Options' : null}
@@ -240,7 +237,7 @@ export default function OddsCal() {
                         {options.map((option) => (
                           <li
                             key={option.value}
-                            className={`py-2 px-4 cursor-pointer text-black border-b border-black ${
+                            className={`py-2 px-4 cursor-pointer text-black border-b border-black hover:text-white ${
                               selectedOptions.includes(option.value)
                                 ? 'bg-[#FF993C] '
                                 : ''
@@ -253,7 +250,7 @@ export default function OddsCal() {
                       </ul>
                     </div>
                   )}
-                </div>}
+                </div>
                 </div>
               </div>
               <div className="flex flex-col lg:w-[25%] w-full">
@@ -262,7 +259,7 @@ export default function OddsCal() {
                 <label className="text-[#FF993C] text-sm  pb-1 ">
                   Odds:
                 </label>
-                <button className="text-[#FF993C] flex gap-1 "> <span className="text-xl">+</span><span>Add bet</span></button>
+                <button className="text-[#FF993C] flex gap-1 rounded-full px-2 "> <span className="text-xl">+</span><span>Add bet</span></button>
                 </div>
                 <label className="text-[#ff9a3c50] pb-1 text-sm ">
                   Choose the odds you have been <br /> given or would like to
@@ -294,7 +291,7 @@ export default function OddsCal() {
                   <input
                     id="small-range"
                     type="range"
-                    className="w-full px-5 h-[1px] mb-6 bg-[#FF993C] rounded-lg  cursor-pointer range-sm invert"
+                    className="w-full h-[1px] mb-6 bg-[#FF993C] rounded-lg  cursor-pointer range-sm invert"
                   />
                   <div className="-mt-[29px]">
                     <div className=" flex justify-between items-center">

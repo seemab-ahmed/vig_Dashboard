@@ -33,14 +33,14 @@ export default function Blog() {
           </button>
         </div>
         <div>
-          <h2 className="text-[#FF993C] lg:w-[15em] lg:leading-8 leading-6 underline underline-offset-2 lg:text-[24px] py-3 lg:pe-6 ">
+          <h2 className="text-[#FF993C]  lg:leading-8 leading-6 underline underline-offset-2 lg:text-[24px] py-3 lg:pe-6 ">
           Nike Leans Into In-Person Fitness As Lululemon Cuts Back
           </h2>
-          <p className="text-[#ff9a3c52] lg:flex hidden text-[14px] leading-5 lg:w-[15em] ">
+          <p className="text-[#ff9a3c52] lg:flex hidden text-[14px] leading-5  ">
             Sports apparel giant Nike has launched “Nike Studios” as the
             brand jumpstarts its in...
           </p>
-          <p className="text-[#ff9a3c52] lg:hidden flex text-[14px] leading-5 lg:w-[15em] ">
+          <p className="text-[#ff9a3c52] lg:hidden flex text-[14px] leading-5  ">
             Sports apparel giant Nik...
           </p>
         </div>
@@ -65,7 +65,7 @@ export default function Blog() {
           </button>
         </div>
         <div>
-        <h2 className="text-[#FF993C] lg:w-[15em] lg:leading-8 leading-6 lg:text-[24px] py-3 lg:pe-6 ">
+        <h2 className="text-[#FF993C]  w-auto lg:leading-8 leading-6 lg:text-[24px] py-3 lg:pe-6 ">
             Nike Leans Into In-Person Fitness As Lululemon Cuts Back
           </h2>
           <p className="text-[#ff9a3c52] w-[15em] truncate">
@@ -90,7 +90,7 @@ export default function Blog() {
           </button>
         </div>
         <div>
-        <h2 className="text-[#FF993C] lg:w-[15em] lg:leading-8 leading-6 lg:text-[24px] py-3 lg:pe-6 ">
+        <h2 className="text-[#FF993C]  lg:leading-8 leading-6 lg:text-[24px] py-3 lg:pe-6 ">
             Nike Leans Into In-Person Fitness As Lululemon Cuts Back
           </h2>
           <p className="text-[#ff9a3c52] w-[15em] truncate">

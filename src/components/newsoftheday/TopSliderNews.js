@@ -39,7 +39,7 @@ const TopSliderNews = () => {
         <h1 className="lg:text-[62px] text-3xl text-[#FF993C] mb-10">
        NE<span className="fontfamily">W</span>S O<span className="fontfamily">F</span> TH<span className="fontfamily">E</span> D<span className="fontfamily">A</span>Y
         </h1>
-        <div className="flex  items-center justify-between mb-4">
+        <div className="flex  items-center justify-between mb-4 gap-2">
           <button
             className={`tab-button-wallet font-semibold flex gap-2  h-[40px] w-[40px] rounded-full bg-[#29190B] justify-center items-center`}
             onClick={prevSlide}

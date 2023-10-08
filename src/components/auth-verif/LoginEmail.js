@@ -45,7 +45,7 @@ export default function LoginEmail() {
         <div
           className={`${
             activeTab === "tab1" ? "justify-between" : "justify-start"
-          } lg:w-[70%] sm:w-[75%] w-full border bg-black flex flex-col pb-6 pt-10 lg:pe-20 sm:pe-10 pe-0 `}
+          } lg:w-[70%] sm:w-[75%] w-full bg-black flex flex-col pb-6 pt-10 lg:pe-20 sm:pe-10 pe-0 `}
         >
           <div>
             <div className="flex flex-col justify-center items-center">

@@ -23,12 +23,12 @@ export function Navbar() {
           <div className="flex gap-6">
             <button
               href="https://flowbite.com/"
-              className="flex items-center"
+              className="flex items-center fontfamily text-[#FF993C] text-2xl rounded-full px-2"
               onClick={() => {
                 navigate("/hubmain");
               }}
             >
-              <MainLogo />
+            VIG
             </button>
             <div className="lg:flex gap-2 hidden">
               <CustomDropDown />
@@ -231,7 +231,7 @@ export function NavbarNews() {
   const [displayddown, setdisplayddown] = useState(false);
   return (
     <nav className="bg-[#1F1307] border-gray-200 dark:bg-gray-900 lg:px-16 px-4 h-[5em]">
-      <div className="flex justify-between items-center mx-auto py-4 h-[5em]">
+      <div className="flex justify-between items-center mx-auto py-4 gap-4 h-[5em]">
         <div className="flex gap-6">
           <button
             href="https://flowbite.com/"
@@ -243,7 +243,7 @@ export function NavbarNews() {
             <MainLogo />
           </button>
           <div
-            className="flex justify-center items-center flex-grow-0 flex-shrink-0 h-10 relative gap-1 px-4 py-3 rounded-[100px] bg-[#ff993c]"
+            className="flex justify-center items-center  h-10 relative gap-1 px-4 py-3 rounded-[100px] bg-[#ff993c] hover:bg-[#feb26a]"
             onClick={closeMenu}
           >
             <svg
@@ -252,7 +252,7 @@ export function NavbarNews() {
               viewBox="0 0 20 20"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
-              className="flex-grow-0 flex-shrink-0 w-5 h-5 relative"
+              className=" w-5 h-5 relative"
               preserveAspectRatio="none"
             >
               <path
@@ -261,7 +261,7 @@ export function NavbarNews() {
                 strokeWidth="1.5"
               />
             </svg>
-            <p className="lg:flex hidden sm:flex flex-grow-0 flex-shrink-0 text-sm font-medium text-left text-black">
+            <p className="lg:flex hidden sm:flex  text-sm font-medium text-left text-black">
               Back to betting
             </p>
           </div>
@@ -277,42 +277,42 @@ export function NavbarNews() {
               isOpen ? "md:mt-0 sm:h-[90vh]" : ""
             } `}
           >
-            <li className={`${isOpen ? "w-full" : ""} text-center`}>
+            <li className={`${isOpen ? "w-full" : ""} text-center `}  >
               <div
-                className="flex justify-center items-center flex-grow-0 flex-shrink-0 h-10 relative gap-1 px-4 py-3 rounded-[100px] bg-[#29190b]"
+                className="flex justify-center items-center  h-10 relative gap-1 px-4 py-3 rounded-[100px] bg-[#29190b] hover:bg-[#ff993c] hover:text-white"
                 onClick={closeMenu}
               >
-                <p className="flex-grow-0 flex-shrink-0 text-sm font-medium text-left text-[#ff993c]">
+                <p className=" text-sm font-medium text-left text-[#ff993c] hover:text-white">
                   Betting Mechanics
                 </p>
               </div>
             </li>
             <li className={`${isOpen ? "w-full" : ""}`}>
               <div
-                className="flex justify-center items-center flex-grow-0 flex-shrink-0 h-10 relative gap-1 px-4 py-3 rounded-[100px] bg-[#29190b]"
+                className="flex justify-center items-center  h-10 relative gap-1 px-4 py-3 rounded-[100px] bg-[#29190b] hover:bg-[#ff993c] hover:text-white"
                 onClick={closeMenu}
               >
-                <p className="flex-grow-0 flex-shrink-0 text-sm font-medium text-left text-[#ff993c]">
+                <p className=" text-sm font-medium text-left text-[#ff993c] hover:text-white">
                   Strategies
                 </p>
               </div>
             </li>
             <li className={`${isOpen ? "w-full" : ""}`}>
               <div
-                className="flex justify-center items-center flex-grow-0 flex-shrink-0 h-10 relative gap-1 px-4 py-3 rounded-[100px] bg-[#29190b]"
+                className="flex justify-center items-center  h-10 relative gap-1 px-4 py-3 rounded-[100px] bg-[#29190b] hover:bg-[#ff993c] hover:text-white"
                 onClick={closeMenu}
               >
-                <p className="flex-grow-0 flex-shrink-0 text-sm font-medium text-left text-[#ff993c]">
+                <p className=" text-sm font-medium text-left text-[#ff993c] hover:text-white">
                   Risk-Management
                 </p>
               </div>
             </li>
             <li className={`${isOpen ? "w-full" : ""}`}>
               <div
-                className="flex justify-center items-center flex-grow-0 flex-shrink-0 h-10 relative gap-1 px-4 py-3 rounded-[100px] bg-[#29190b]"
+                className="flex justify-center items-center  h-10 relative gap-1 px-4 py-3 rounded-[100px] bg-[#29190b] hover:bg-[#ff993c] hover:text-white"
                 onClick={closeMenu}
               >
-                <p className="flex-grow-0 flex-shrink-0 text-sm font-medium text-left text-[#ff993c]">
+                <p className=" text-sm font-medium text-left text-[#ff993c] hover:text-white">
                   Insights & Analysis
                 </p>
               </div>

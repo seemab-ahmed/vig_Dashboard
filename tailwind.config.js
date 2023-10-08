@@ -3,6 +3,17 @@ module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
     extend: {
+      animation: {
+        'color-change': 'color-change 4s linear infinite',
+      },
+      keyframes: {
+      
+        'color-change': {
+          '0%': { backgroundColor: 'red' }, 
+          '50%': { backgroundColor: 'blue' }, 
+          '100%': { backgroundColor: 'yellow' },
+        },
+      },
       backgroundImage: {
         'custom-radial-gradient': 'radial-gradient(circle closest-corner at center, rgba(255, 154, 59, 0.3), rgba(51, 51, 51, 0) 55%)',
         'custom-radial-gradientnd': 'radial-gradient(rgba(255, 153, 59, 0.25), rgba(16, 16, 16, 0)) 50% 50% at 50% 50%',

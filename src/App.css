@@ -9,34 +9,14 @@
   font-weight: 300;
   font-style: normal;
 }
-@font-face {
-  font-family: 'Gridular';
-  src: url('../public/Web/Gridular-Regular-Web/Gridular-Regular.woff2') format('woff2'),
-       url('../public/Web/Gridular-Regular-Web/Gridular-Regular.woff') format('woff');
-  /* Add additional formats if you have them */
-  font-weight: 400;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'Gridular';
-  src: url('../public/Web/Gridular-Regular-Web/Gridular-Regular.woff2') format('woff2'),
-       url('../public/Web/Gridular-Regular-Web/Gridular-Regular.woff') format('woff');
-  /* Add additional formats if you have them */
-  font-weight: 500;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'Gridular';
-  src: url('../public/Web/Gridular-Regular-Web/Gridular-Regular.woff2') format('woff2'),
-       url('../public/Web/Gridular-Regular-Web/Gridular-Regular.woff') format('woff');
-  /* Add additional formats if you have them */
-  font-weight: 600;
-  font-style: normal;
-}
 .fontfamily{
   font-family: "Gridular";
 }
+.abutton:hover , button:hover{
+  background-color: #ff993c30 !important;
+  cursor: pointer;
 
+}
 .bg-login {
   background-image: url("./assets/emailPage.png ");
   background-repeat: no-repeat;
@@ -46,12 +26,12 @@
   background-image: url("./assets/passwordpage.png");
   background-repeat: no-repeat;
   background-size: 100% 100%;
-} /* Style tab buttons */
+} 
 .bg-wallet {
   background-image: url("./assets/walletcont.png");
   background-repeat: no-repeat;
   background-size: 100% 100%;
-} /* Style tab buttons */
+}
 .tab-button {
   padding: 8px 22px;
   cursor: pointer;
@@ -89,4 +69,22 @@
 }
 * {
   scrollbar-width: none;
+}
+.blink{
+  color: #FF993C;
+  animation-name: example;
+  animation-duration: 2s;
+  animation-iteration-count: infinite; 
+}@keyframes example {
+  from {color: #FF993C;}
+  to {color: #ff9a3c55;}
+}
+.blinkdot{
+  background-color: red;
+  animation-name: exampledot;
+  animation-duration: 2s;
+  animation-iteration-count: infinite; 
+}@keyframes exampledot {
+  from {background-color: red;}
+  to {background-color: #ff9a3c55;}
 }
