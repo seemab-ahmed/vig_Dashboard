@@ -23,7 +23,7 @@ export default function Blog() {
     {/* Blog Card 1 */}
     <div className="flex lg:flex-row flex-row  gap-3 items-center lg:w-[50%]  w-full" onClick={()=>{navigate("/newsofday")}}>
       <div className="w-full h-full ">
-        <img className="min-w-[10em] min-h-[20em] max-w-[20em]  h-full w-full object-cover rounded-2xl" src={Player} alt="" />
+        <img className="min-w-[10em] min-h-[23.6em] max-w-[20em]  h-full w-full object-cover rounded-2xl" src={Player} alt="" />
       </div>
       <div>
         <div className="flex justify-between">

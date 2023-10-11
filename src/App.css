@@ -15,6 +15,7 @@
 .abutton:hover , button:hover{
   background-color: #ff993c30 !important;
   cursor: pointer;
+  
 
 }
 .bg-login {
@@ -88,3 +89,12 @@
   from {background-color: red;}
   to {background-color: #ff9a3c55;}
 }
+input[type="date"]::-webkit-calendar-picker-indicator {
+  color: rgba(0, 0, 0, 0);
+  opacity: 1;
+  border-width: thin;
+  display: none;
+}
+
+
+

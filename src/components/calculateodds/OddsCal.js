@@ -41,7 +41,7 @@ export default function OddsCal() {
           <span className="fontfamily">A</span>LCULATE ODD
           <span className="fontfamily">S</span>
         </h1>
-        <p className="text-[#ff9a3c4d] text-sm w-[29em]">
+        <p className="text-[#ff9a3c4d] text-sm lg:w-[29em]">
           The bet calculator allows you to input your stake & odds in American
           formats to quickly calculate the payout for your bets.
         </p>
@@ -185,13 +185,13 @@ export default function OddsCal() {
       </div>
       <div className="lg:px-32 px-5 pt-5 pb-10 ">
       <div className="my-10">
-        <h1 className="text-[#FF993C] lg:text-[62px] text-3xl py-5 leading-7 lg:my-5">
+        <h1 className="text-[#FF993C] lg:text-[62px] text-3xl py-5 lg:leading-[1em] leading-7 lg:my-5">
           H<span className="fontfamily ">O</span>W{" "}
           <span className="fontfamily ">T</span>O C
           <span className="fontfamily ">A</span>LCULATE PARLAY BET ODD
           <span className="fontfamily ">S</span>
         </h1>
-        <p className="text-[#ff9a3c4d] text-sm w-[29em]">
+        <p className="text-[#ff9a3c4d] text-sm lg:w-[29em]">
           The bet calculator allows you to input your stake & odds in American
           formats to quickly calculate the payout for your bets.
         </p>
